@@ -4,7 +4,6 @@ import { SummaryCards } from '@/components/SummaryCards';
 import { ProjectsTable } from '@/components/ProjectsTable';
 import { ProjectCard } from '@/components/ProjectCard';
 import { RefreshButton } from '@/components/RefreshButton';
-import { WeeklyTrackingSection } from '@/components/WeeklyTrackingSection';
 import Link from 'next/link';
 
 export const revalidate = 30; // Revalidate every 30 seconds
@@ -139,9 +138,6 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* Weekly Tracking Section */}
-        <WeeklyTrackingSection projects={activeProjects} />
 
         {/* Projects Table - Active only */}
         <div className="mb-8">
