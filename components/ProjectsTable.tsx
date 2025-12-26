@@ -25,14 +25,17 @@ function getNextDueDate(project: ProjectMetrics): string | null {
   const incompleteTasks = project.tasks.filter(t => !t.isCompleted && t.dueDate);
   if (incompleteTasks.length === 0) return null;
 
-  // Find earliest due date
-  const earliest = incompleteTasks.reduce((prev, curr) => {
+  // Prioritize launch task if it exists and is incomplete
+  const launchTask = incompleteTasks.find(t => t.name.toLowerCase().includes('launch') && t.dueDate);
+
+  // Use launch task if found, otherwise find latest due date
+  const latest = launchTask || incompleteTasks.reduce((prev, curr) => {
     if (!prev.dueDate) return curr;
     if (!curr.dueDate) return prev;
-    return parseInt(curr.dueDate) < parseInt(prev.dueDate) ? curr : prev;
+    return parseInt(curr.dueDate) > parseInt(prev.dueDate) ? curr : prev;
   });
 
-  return earliest.dueDate;
+  return latest.dueDate;
 }
 
 export function ProjectsTable({ projects }: ProjectsTableProps) {
@@ -61,7 +64,7 @@ export function ProjectsTable({ projects }: ProjectsTableProps) {
                 Tasks
               </th>
               <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                Next Due Date
+                Due Date
               </th>
             </tr>
           </thead>
