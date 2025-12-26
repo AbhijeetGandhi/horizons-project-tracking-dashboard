@@ -16,7 +16,7 @@ export function SummaryCards({
     ? Math.ceil(summary.totalHoursRemaining / (teamSize * hoursPerWeek))
     : 0;
 
-  const stats = [
+  const stats: Array<{ label: string; value: string; color: string; subtitle?: string }> = [
     {
       label: 'Total Hours Spent',
       value: `${summary.totalHoursSpent}h`,
