@@ -36,7 +36,6 @@ export function SummaryCards({
       label: 'Weeks to Completion',
       value: weeksToCompletion > 0 ? `~${weeksToCompletion} weeks` : 'Complete',
       color: 'green',
-      subtitle: `Based on ${teamSize} person(s) @ ${hoursPerWeek}h/week`,
     },
   ];
 
