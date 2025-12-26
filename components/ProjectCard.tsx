@@ -8,16 +8,19 @@ function getNextDueDate(project: ProjectMetrics): { date: string; isOverdue: boo
   const incompleteTasks = project.tasks.filter(t => !t.isCompleted && t.dueDate);
   if (incompleteTasks.length === 0) return null;
 
-  // Find earliest due date
-  const earliest = incompleteTasks.reduce((prev, curr) => {
+  // Prioritize launch task if it exists and is incomplete
+  const launchTask = incompleteTasks.find(t => t.name.toLowerCase().includes('launch') && t.dueDate);
+
+  // Use launch task if found, otherwise find latest due date
+  const latest = launchTask || incompleteTasks.reduce((prev, curr) => {
     if (!prev.dueDate) return curr;
     if (!curr.dueDate) return prev;
-    return parseInt(curr.dueDate) < parseInt(prev.dueDate) ? curr : prev;
+    return parseInt(curr.dueDate) > parseInt(prev.dueDate) ? curr : prev;
   });
 
-  if (!earliest.dueDate) return null;
+  if (!latest.dueDate) return null;
 
-  const date = new Date(parseInt(earliest.dueDate));
+  const date = new Date(parseInt(latest.dueDate));
   const now = new Date();
   const diffTime = date.getTime() - now.getTime();
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
