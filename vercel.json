@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "nextjs",
+  "env": {
+    "CLICKUP_API_TOKEN": "@clickup_api_token",
+    "CLICKUP_TEAM_ID": "@clickup_team_id",
+    "CLICKUP_SPACE_ID": "@clickup_space_id",
+    "CLICKUP_PROJECTS_FOLDER_ID": "@clickup_projects_folder_id",
+    "TEAM_SIZE": "4",
+    "HOURS_PER_WEEK": "75"
+  }
+}

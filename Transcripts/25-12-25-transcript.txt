@@ -1,0 +1,907 @@
+Abhi Horizons Catch Up - December 25
+VIEW RECORDING - 154 mins (No highlights): https://fathom.video/share/PybKSGckx8pHXrN6zarHHz7ReszqtrmE
+
+---
+
+0:00 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Thank you. Thank you. Thank you.
+
+4:02 - Alexander Apfel (Horizons ABA)
+  Okay, I'll be able to respond to it.
+
+4:06 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yep, no problem. Thank you.
+
+5:25 - Alexander Apfel (Horizons ABA)
+  Okay. Amazing. I just figured out, I just set up, uh, how to, you just set up smart switches so I can control my lights better.  Anyways, sorry about that. Okay. problem. I got just left. Um, okay. Let's do a quick thing. We're starting to expand our team and we started hiring more people in India, um, like to do credentialing, revenue cycle management, billing, authorization.  So it's cool. I just got off with someone else. It's great. I was thinking like, if I ever need like help from someone.  Hopefully, like, vent things out for me. may give you a call if I trust you, but so far. Okay, so let's jump in.  Thank God today is really slow for me. I'm sure maybe it is for you, too, because of the holiday.  Like, everyone's already kind of taking off. So let's jump in. Let's do a full catch-up. I have all the time in the world for you.  I don't know what time you have. I think I want to start with discussing the tracker that tracks both the time spent and the projected time and projected deadlines.  All right, can we talk through that? Yes, sure.
+
+6:32 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Actually, I was just working on that right before our call. And so in ClickUp, it's a weird thing, like, only for doing some, like, you know, calculations for the dashboard.  Like, if you want to create, like, specific fields that are based off, you know, adding some of the things, it needs you to upgrade the plan, like, do the business plan.  I'm like, oh, I'm not doing that. So. Wait, I missed that. I missed that.
+
+6:55 - Alexander Apfel (Horizons ABA)
+  What were we saying?
+
+6:56 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So in ClickUp, we were able to get, you know, the most of the metrics that But then to get the project estimate, we needed like a calculation field which can add up the hours from time estimate from different lists.  For that field, was like you need to upgrade your plan for like, you know, it's not in the plan that also.  I was like, I just set up something custom really quick where right now, like, you know, the data in here is not up to date.  Like, obviously, we are still adding, updating the hours and everything for the past projects for the current one, like, and it's all being set up right now.  Like, managed to create the, at least the essential tasks that we have, like, you know, for each one. And again, like a lot of the things are missing, but this is like, you know, the overview of the dashboard of how it would look like total hours spent, total hours estimated, total hours remaining, for example, and then weeks for completion.  Again, this is assuming like, you know, maybe 40 hours a week is there, but obviously.
+
+7:48 - Alexander Apfel (Horizons ABA)
+  This for all projects or is it for one individual project? No, this is for all projects, but, you know, we haven't really added like, you the right times and everything.  Right, right, right. So let me ask you a question though. Are you going to have to manually do this?  Or is this easy, like are you updating ClickUp, and ClickUp information pulls into this dashboard?
+
+8:04 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, yeah, so I just need to update it, we just need to update it into ClickUp, and this dashboard will pull values from there.  So this is like pulling from the ClickUp API and then, you know, creating this dashboard.
+
+8:14 - Alexander Apfel (Horizons ABA)
+  Yeah, I mean, I'm surprised, ClickUp had nothing built in, that was easier to use?
+
+8:18 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  They had, but it's like, for that particular feature, you would need to upgrade your plan, like if want to do custom calculations, and I was like...
+
+8:23 - Alexander Apfel (Horizons ABA)
+  It wasn't built in, it cheaper for you just to build it yourself. Yeah, exactly, mean, it's like $10 per person increase, and I was like...  no, that's not worth it, totally, totally, totally, okay, got it, so, okay, got it. No, this is great, this is great, our remaining, and then like there should be an estimated due date for each task also.
+
+8:42 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Exactly, yeah, that's not added, we have that in ClickUp, so obviously that would be pulled here as well. As I said, it's just like, and I just worked like two hours on this, and this dashboard we have, but obviously we'll have more and more info here.  So, yeah, I think that's the goal, I think technician checking is something that, you know, we, I created like a template for all sales.  And then Yes. For the team that to follow that, you know, hey, we want to create these type of tasks.  Let me actually show you that as well. So this is the dashboard.
+
+9:07 - Alexander Apfel (Horizons ABA)
+  When will it be finalized in terms of pulling in the hours spent today and then also and then the estimate the remaining hours?  Yes.
+
+9:17 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So it would, I would say like tomorrow, I would be done with, you know, doing all the things that we discussed, like, you having all those metrics set up correctly.  And then we'll keep working on, like, probably by the end of this week, where we'll have all the data updated click up itself.  So it would reflect the right timelines in here. So, you know, we are working from the past and then obviously the future estimate.  Yeah, it would be there. Yeah. Perfect.
+
+9:40 - Alexander Apfel (Horizons ABA)
+  Okay. Yeah, let's get this. I definitely want this as soon as possible because I want to be able to understand, like, how many hours are remaining into these projects because it feels like obviously because we're working on so many projects, we're having a harder time getting any of them to completion.  I just want to get a better understanding of what that looks like. Right, right. No, absolutely. Yeah, I totally agree.
+
+9:57 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And I think, yeah, this would definitely give us, like, you know, the. The complete idea of, you know, where things stand and how much more work it's going to take, Totally, totally.
+
+10:05 - Alexander Apfel (Horizons ABA)
+  And then will this be included, so then you'll also, on this dashboard, are you also going to track on a weekly basis, like how many hours were spent on every given project, on any given time frame, and then also how much time is spent on debugging, you know, fixes and things like that?
+
+10:24 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yes, yes, it's all will, it all will be shown here because for all the, I think, the debugging and the error fixing that we do, we are going to have like a different tags for that, so obviously those will be like, you know, shown differently than, you know, what are the new features or the development hours, so yeah.  Okay, okay, and then again, like, just to give you an idea in the ClickUp as well, so like, this is the technician check-in, and then let me just go to the, so I just created like, you know, implement V1, let's say, and then, you know, like set up Monday columns, all those things, and actually the most useful here is going to be the Gantt chart, where, you know, you can see all the  Like implement v1, then what are the tasks blocking each other, then testing and implement, like right now we are on client demos, so all those things are there, so it just makes it easier to, yeah.  And then we're going to try to follow this template on all the projects, and then obviously the subtasks would be different for every project, but mainly the tasks, yeah.
+
+11:19 - Alexander Apfel (Horizons ABA)
+  And this is going to be helpful for you as a company, right, to keep track of what's happening. Yep, yep, it's going to be really helpful.  Awesome, so when do you think this one will be completed, this dashboard? Dashboard will be completed like tomorrow, like we'll have all the metrics that we want to see, all those things.
+
+11:35 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  It's just the actual hours and all those things would take as we keep updating stuff in ClickUp and, you know, adding the actual hours and all those it, so that'll take some time to get the correct hours in.
+
+11:46 - Alexander Apfel (Horizons ABA)
+  Exactly, yep, yep.
+
+11:47 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  For the past as well, the predictions would be done like, you know, maybe by Friday, but then pulling all the past data would take time, so yeah.  Yeah, the most important is a prediction.
+
+11:55 - Alexander Apfel (Horizons ABA)
+  We'll start with that and then go to the past to add the past. yep, yep. We'll do the prediction.  Thank you. next step of this project is I would want to do it for any of the big projects we've already done, like add them in as completed, you know, like there should be a status of like in progress, not started, completed, and then it would move it out of the dashboard or maybe it would have a different view or we could, because I want to eventually be able to look at the whole year or any given time frame, okay, what projects do we complete, how many hours did it take?  Does that make sense?
+
+12:24 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yes, right, yeah, yeah, totally, yep, yep, we'll definitely, and yeah, that's why we also created like, you know, for example, like the interview end-to-end workflow, which is kind of a big workflow, but obviously we'll need to bring all the tasks from the past in here, so, but yeah, you'll be able to see like, you know, every project-wise, all the details here.
+
+12:40 - Alexander Apfel (Horizons ABA)
+  Exactly, okay, great, so, okay, perfect, what's next, what else we got?
+
+12:45 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, yeah, so I think I'll just quickly demo you the technician check-ins, we kind of focused on that as well, because I realized that it's going to save a lot of time, and it wasn't really that difficult to build as well, so I'll just give you a quick demo on that one, since it's ready, so.  Right now we are in the dev view for like, you know, just for the testing purposes, but you can see we added a few columns, like you can select which template of the email you want to send out.  So she can just select template one, three. And the good thing is, let's say this is the template that is there, right?  But she, I want to add an extra line here, like, you know, just like, you know, she do that.  So let's say, for example, we select template two, and then all they need to do is just click send, right?  Like, you know, and then obviously we, manage the send date and the reply receive dates here as well. So let me just remove this, for example.  And then the reply summary, this would go.
+
+13:37 - Alexander Apfel (Horizons ABA)
+  How how do you track the reply? You can track the reply to that specific email?
+
+13:43 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No, we are, the idea we have is we are going to have like the subject line to be able to track these because you know, it's going to be always like, you know, static for these emails that we send out.  And what is the subject line?
+
+13:54 - Alexander Apfel (Horizons ABA)
+  Where is the subject template?
+
+13:55 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Subject is not here because the email template that's issued. There were just emails, not the subject lines. yeah, we'll definitely- You have a subject line to make that.  Yeah, exactly. We'll have that in make. Okay, let me just make sure I have it open. What are the statuses for reply?
+
+14:12 - Alexander Apfel (Horizons ABA)
+  What are the options?
+
+14:13 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So the reply set right now is positive, negative, and no reply. And then obviously the email sent. And then obviously when it's negative, it would notify Taylor that, hey, we got a negative reply.  It would just send an email to Taylor saying, hey, there was a negative reply. And then no reply is like, we don't receive a reply for three days.  It would also notify, hey, you message them and, you know. Got it. We don't notice.
+
+14:36 - Alexander Apfel (Horizons ABA)
+  And then just thinking, so she'll get an email. In theory, there should be a status where it's like three days, no response.  Because it's like, oh, no, that's no reply. Because she wouldn't even get emailed. She should just have to go in every morning and see which one, there are no reply status.  And then resend that. Or, I don't know, what do you do? I guess she'll have to follow up on the email.  What would she do there? She said that she just directly calls them if they don't reply for three days.
+
+15:10 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So the next reply is basically three days without reply. Okay, perfect. And then, how does she add records?
+
+15:17 - Alexander Apfel (Horizons ABA)
+  she have to manually add them, or is going to be a list of all of our technicians here? Obviously, this is like the test one.
+
+15:23 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Actually, this template one, two, three are like, these are going to have these default values, right? So she wouldn't even have to do anything.  She can keep using her board, or like, we can create a view for her as well, like, which she needs.  And then, yeah, just filters the technicians that are in maybe therapy active or like, you know, those stages. Yeah, yeah, yeah.
+
+15:42 - Alexander Apfel (Horizons ABA)
+  Yeah, I'm just grateful to direct back. Okay, perfect. I'm excited. Looks good. Are we doing the wrong thing by adding so many columns to the main board, and then doing views?  Should we be creating new boards? Like, how do companies do it? No, I think it is fine.
+
+15:58 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Like, if you're creating, if you start So creating more boards, then you are going to have to have like link columns and everything which makes things complicated and then again right now everyone is working on this one board and then they can just jump through views but if it's different boards and then again in those boards you're gonna actually gonna have to have views as well like you cannot just have like one board per view which would just make it too complicated and from the automations as well it makes us it is easier for us to pull data from one board than different boards because in one API call you can just access one board's data.  Yeah, so all those things. Okay.
+
+16:32 - Alexander Apfel (Horizons ABA)
+  Okay. This is good. I have no questions. Hayler was very excited about it. Yeah. I emailed you a couple things.  Maybe a couple questions but overall looked good to me so I think we're ready to go. Yeah. Yeah.
+
+16:42 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  This is ready to launch. We will just you know I'll record another loop with you know showing a quick demo and then yeah we can launch it.  Please. Right.
+
+16:50 - Alexander Apfel (Horizons ABA)
+  Right. Right. Okay.
+
+16:52 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Then okay so that's Let me just yeah and then we have the Gmail labeling tool as well. Like, just have a quick demo on that one, but then yeah, it's something that we can, okay, so let me just reload this, make sure this is connected, okay, so for example, the way it would work is like, let's say, let me open, for example, something like this, you just have to wait, like, a few seconds before you get this suggestion, so, yeah, you can see, like, you know, it gives you a tag here, which says newsletter, newsletter, and then you can just click on it to assign it to that.  So you can see like, you know, it just pops up like a tag here. So this got added by the automation, like, you know, once you select that, but then here you will get the options to like, you know, suggested tags, and then you can, if you like it, you can just select it.  Since it's already selected, it's gone now. Just give me a set. Yeah, so you can see like, you know, it shows up.  Yeah, and it would auto refresh to add that tag, right, you know, so, And then...
+
+17:59 - Alexander Apfel (Horizons ABA)
+  Right, and then... Well, I want to also have that option on the inbox view, I mean you're looking at your inbox, so go back, go click back, like the goal is that you should be able to select an email, let's say you select an email, no, check, select the checkbox, that it will pop up on this screen, that's where it's more important.  Okay, got it, yeah, we can add that here. You should add it, if you can add it, I don't know how much control you have, you can add it in the toolbar next to the ellipsis, yeah, like above where it says social and promotions, it should be there.
+
+18:32 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Oh, okay, okay, I'll see if we can, you know, like update this view or do we need like, you know, a small covering toolbox where it would show tags, something like that, so yeah.
+
+18:40 - Alexander Apfel (Horizons ABA)
+  Okay, does that make sense? So, okay, and how is the AI working that it's analyzing the email and, and also it will be based on your history of labeling emails, like it will learn as it goes, how does it work?
+
+18:52 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No, so right now we just have like a genetic AI which, you know, like just analyzes the email content and suggests the like product.  For like, you know, this one was the newsletter, so it would just give that or like, if you open some other one, for example, something like this, it would give it like, you know, a task or project, something like that.  Right. But the actual goal is obviously the next step is going to be accessing your email inbox and getting all the data from there and then training on that one.  Obviously, the feedback loop would come in later, but then at least to start up, we will pull like, you know, whatever labels from which you want us to pull the emails and then we'll just train the AI on that those months.
+
+19:29 - Alexander Apfel (Horizons ABA)
+  So here's the thing. I want to build it in a way that's not just for me, right? Because eventually we may want to license this out and add it as a marketplace app.  I don't think you should have to rely on past emails and past labeling. The idea is that you should start fresh from day one and it should be trained up as you label emails using the tool, especially just as you label emails.  So that's why I suggested if you could look into the company Simply file, because they were doing it even before ChatGPT, they were doing this.  Yeah, with machine learning. So can you try to figure out how they do it? Can you reverse engineer how they do it?
+
+20:03 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Obviously we can set that up, I said, the auto-feedback loop was going to be another second step, but if you want, we directly start with a generic AI prompt and then it trains over as you mark the emails or drop, we can definitely set that up, so we can start with that without training it on past data.  Okay, so what's the next step here?
+
+20:24 - Alexander Apfel (Horizons ABA)
+  When do you think the next update will be on this one?
+
+20:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I think by Monday we should be able to have it like, you know, obviously some of the, there are still some breaking things where, you know, it's not showing up every time or small fixes like that, which will fix.  And then the second step is, I think is like, you know, when you select, can we show it here or like what's the ways here?  And then obviously I will have Alphonse research on, so Alphonse is actually celebrating Christmas, so I don't know if he's available today, tomorrow.  So, you know, he'll be, yeah. So yeah, but then yeah, we'll, we'll just work on those. So hopefully by Monday, we will have a good update on this one.  Thank you.
+
+20:59 - Alexander Apfel (Horizons ABA)
+  Okay. Awesome. Okay.
+
+21:03 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Then other than that, okay, so now for the authorizations, we actually managed to, you know, populate a full PDF using the data and again getting it to the closest as it looks.  So we're good. So if you have time today, do you think we can go through the other four PDFs today?  You can show us what data it should be so that I can just forward it to Jay and he can get all those automations ready pretty quickly.  Sure.
+
+21:27 - Alexander Apfel (Horizons ABA)
+  For sure. Yep.
+
+21:30 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So should I pull the PDFs or like, do you have those?
+
+21:33 - Alexander Apfel (Horizons ABA)
+  I think I have it. Do you want to give me more high level updates and we'll come back to this?
+
+21:43 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Sure. Yeah. Then the other one is, so obviously the onboarding one is complete, like the automation, like the whole workflow.  We have a call on that yet to, you know, just go over those. Perfect. I don't know if just send me.  Yeah. Okay. Okay. Yeah. So, right. So the onboarding one is done as well. Like it was a big chunk.  We tested it quite a few times. We do have some questions, but I think it would be better if, you know, Kara and everyone is on the call when we clarify those questions.
+
+22:16 - Alexander Apfel (Horizons ABA)
+  And in the onboarding workflow, you also have the workflows for like the RBT course, the competency, the assessment, uploading, all that, right?
+
+22:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Just a second. Okay. So these are the, like, you know, main items that we are like, you know, have included in our onboarding automation setup where it's, you know, the onboarding form, Sapphire background check, finger check.  Obviously many of the things in this one are going to be manually in a way that, you know, like we are still building about for Sapphire.  Yeah. So, you know, once that comes in, then it will be fully automated, but right now, once the email comes in or, like, Chris marks it, you know, the next steps happen.  And we have the HIP training, the orientation, CJS, Athena, and these are all dependent on whether it is a BTR, BT, if it's a Maryland or Colorado, like, you all those sort of things.  So, the main workflow that we have right now for onboarding is that whenever someone goes to onboarding, they will have, you know, these items created with all the due dates and everything, right?  Like, and then we will, obviously, like, for the ATCC, there is going to be the automation and, you know, where they get the invites, all those things, the Zoho email is created.  And then for every item that is created, there are automated follow-ups, reminders happening as they complete or, like, you know, the stages are pending, marking them as later, all those things.  So, yeah. And then the assessment, I don't know, you mentioned that. What was it? I don't know if we talked about it.
+
+23:54 - Alexander Apfel (Horizons ABA)
+  I can email Kara, but basically, there's a whole process where, where when. If a BT, if we hire a BT who doesn't have the RBT certification yet, so they have to complete the course, once they complete the course, they have to upload the certificate, then they have to, once they complete the course, they upload the certificate, then we say, okay, we're going to schedule you for a competency assessment, and then we deal with scheduling them for the assessment.  An assessment is like an in-person, or like a via Zoom, they meet with them, and then they do a test, then once we complete that, we send them the forms that they have to fill out to apply for the exam, which is like a written exam, and once they apply for the exam, they schedule it, and then they complete the exam, and they send us a certificate that they passed.  There's like a whole, there's a bunch of steps, and we have reminders every step of the way. Did we not discuss that?  I thought we discussed that.
+
+24:49 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So we do have like, you know, like if it's a BT, then we have like a ATCC 40-hour course, for example.
+
+24:55 - Alexander Apfel (Horizons ABA)
+  It's than that, it's more than that. Okay, let me, let me email Kara. I didn't check in there. Thank you.
+
+26:21 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I think, okay I see, so I was just going through the Notion document, I think what we have worked on right now is mainly what the Chris does for onboarding, which is like, you know, all these things, and then obviously the Kera, the credentialing manager, like, you the task for ePrep and all those things, we discussed that, you know, it's going to be like ePrep cannot be automated, all those things, so we're going to send an email to Kera, like the way we have it is like, hey, can credentialing for this, yeah, we're going to bring on someone from India to handle credentialing, so that'll change, but yeah, keep going, yeah, don't think it keeps going, I don't think we discussed the course, the certification, keeps rolling, is that it?
+
+26:57 - Alexander Apfel (Horizons ABA)
+  that the end of it? Uh, no, we have...
+
+27:01 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  David, is there?
+
+27:03 - Alexander Apfel (Horizons ABA)
+  Oh, what's that? Let's scroll up, scroll up. Yeah, RPT course completion follow-ups, that's maybe a part of it. Okay, let's keep going.  Anything else? No, that's it. Okay. Yeah, so let's see how B3B... Hold on, scroll up.
+
+27:28 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Because, like, the competency assessment exams, like, you know, the automated emails and stuff is already set up for these, like, you know, for those to go out based on the statuses, I believe.  I think these are already automated in make, but if you remember, yeah. Oh, is something I might need to, like, look at the Fathom one more time just to see what we planned out here.  don't know. I'll it aside. Onboarding form, Sapphire background check, CJI, training rate set up, I think we'll find it here, Athena, Zoho email creation, clinical training, hip health account, NPI.  Okay, so I scheduled sent an email for Monday.
+
+28:23 - Alexander Apfel (Horizons ABA)
+  Okay, it's fine, we'll discuss it more when we discuss, I said the schedule sent for Friday. When we discuss onboarding workflow, we'll talk about all that.  Yeah, yeah, I think we can go with that because, yeah, okay. We'll go through this notion because you have the BACV stuff in there, yeah, so maybe we'll go through that.
+
+28:39 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, yeah, we can go through, okay, yeah. Awesome. All right, where were we? Okay, so the onboarding is there.  The onboarding we're talking about on Monday, perfect, okay.
+
+28:48 - Alexander Apfel (Horizons ABA)
+  Yes.
+
+28:50 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Obviously, we launched the ticketing system, and I think the care already used it. Obviously, fixed the issue where, you know, they're the one who created the ticket, their email wasn't CC.  Thanks. seen which is now, know, will be CC, so all those things. So, yeah, that's set up.
+
+29:06 - Alexander Apfel (Horizons ABA)
+  Do I have to enter the password every single time to open the picketing system?
+
+29:11 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  You shouldn't have to, like, once you log in, it should let you in every time.
+
+29:16 - Alexander Apfel (Horizons ABA)
+  I think it's requiring me to, and I forgot the password. I have a password saved for Airtable, but my regular Airtable account.  Okay.
+
+29:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Do you have it? Can you send me on the chat?
+
+29:29 - Alexander Apfel (Horizons ABA)
+  Yeah. yeah.
+
+29:30 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  yeah. So make sure you don't have to sign in every time.
+
+29:34 - Alexander Apfel (Horizons ABA)
+  Yeah.
+
+29:35 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And if, if, if it, if it's fine, I just kept it, like, for a, like, the security purposes, but then we can do it without the password as well.  Like, I can set it up that anyone can, yeah.
+
+29:46 - Alexander Apfel (Horizons ABA)
+  That's fine. Okay.
+
+29:47 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Wait, I'm just logged in with the another. Okay. Let's see. you. So I, should I send it here in chat, or?
+
+30:20 - Alexander Apfel (Horizons ABA)
+  Yep. Okay, perfect. Okay, great.
+
+30:34 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yep. Okay, awesome.
+
+30:35 - Alexander Apfel (Horizons ABA)
+  Yeah, let me just close it out and make sure that I can quickly log in. Yeah, so you can just remove the password, honestly.  Yeah, okay. Okay, well, I'll do it too much. Okay.
+
+31:06 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And then lastly, I think the one thing we have is the cancellation CUI updates. So I just tried to come up with the different layouts this time.  And like, you know, and again, like the word changing and everything, the notes that you had shared over the email.  So the first thing we have is like, you know, we now have a tutorial here. So like, you they can just, you know, for example, like this, if they are logging in first time, they can just say start tutorial where it's like, you know, highlights the part.  And it says first at the session, you need to cancel like, you know, a small note for them when they click next, select the reason and a small note for them.  Similarly, like, you know, boost sessions, add extra type. Time for existing sessions, all those. Book new sessions, entirely new sessions at times that work for you, and then scheduling preferences, choose if you're open to scheduling more than the canceled yet.  So, and then they can just click on this one again to like, you know, just go through the follow up one more time, like, know.
+
+32:18 - Alexander Apfel (Horizons ABA)
+  Perfect. By the way, in book new sessions, make sure it's clear that in the instructions that it's like, that they're offering times to the other party.  And if the other part is available, then, then it's booked. I mean, it's not like they can just book and say, they'll book whenever they want, it's their, they're offering up makeup times, basically.  So just make that clear in the notes. But leave it at book new sessions, but make it more clear in the instructions.  Is okay? Yeah, yeah, we can definitely do that.
+
+32:42 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And then again, like, a small checkbox for them where they can select, like, I'm open to scheduling more than the canceled times.  For example, if they're suggesting a time more than, you know, what they canceled and then technician approves, it would be more time than they scheduled.  And then we have this small inbox here. And where they can directly look at the review requests that they have.  So if they have any review requests, they can just click here. And then again, there is a small tutorial on that one as well, where it's like a reason for cancellation, family emergency, session boost.  Then they can just accept these things or decline.
+
+33:21 - Alexander Apfel (Horizons ABA)
+  And again, like this session, yeah. By the way, from a design perspective, I would go back for now. I like the one of the original one that was more colorful, like the purple, you know, more colorful.  Yeah.
+
+33:33 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And I had one more thing, like, so actually, like, obviously, when you look it on actual mobile phone, it is much more, like, readable and stuff, because we are looking at a big screen in a small view, like, you know, at a small view.  So it just kind of, you know, is confusing. But then if you look at these links, know, open these things in mobile, they do look slightly better, for example, like, you know, more.  And so one more idea I was having is that I just felt like, you know, there is too much that I'm seeing on my.  I don't really see, okay, I need to do this as a first step, for example, right, like there are three, four different boxes, so one idea that I had was like, so this is another way of like showing a tutorial actually, where it's like a slider, as we discussed, like, you you can just, I like the slider better, I like the slider better, yeah, but my idea was that this is more like a progress bar and then they are just doing one item in one screen, so it's just really easier, I know, okay, much better, let's see it, go through it, want to see it, so, you know, sessions to cancel, obviously, like, you know, this is the process where you can select the time, can duration, the sessions that you're canceling, right, add that, then you go to next step, while you're canceling, much better, much better, much better, and then you have reason, for example, family emergency, additional lost, you can add those, then boost existing sessions, so they can just, you know, book these, add more times in here, click next, book new sessions,  They get the most optional, you can reschedule a brand new session to make up for the counselor, as many as you need, so all those things, again, the same thing, they can just select the time slots here, let me just get rid of that, next, then preferences, then, you know, here, just, I'm open to scheduling, and maybe these box, we can get into, like, you the previous one as well, so, maybe we'll also, like, add more instructions there to make it more clear what we're trying, yeah, it just gives us more space now to play around it, like, you know, it's not, we have, yeah, Yeah, then, they're gonna be separate, I emailed you, are you making separate workflows for the tech and for the client, or is it the same exact product?
+
+35:38 - Alexander Apfel (Horizons ABA)
+  No, it's gonna be the same exact product. Yeah, here, that'll affect the language we use, and the instructions of, like, why they should add more hours, right?  Yes, yes, absolutely. we really need this, this might not need to be, this might need to be in the beginning, so they know when they're offering time, that they're open to scheduling more or not, right?  Right, right, okay, yeah.
+
+35:58 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  We need to very clear to them.
+
+36:00 - Alexander Apfel (Horizons ABA)
+  The idea is, there's two ways, before they get to rescheduling, before they get to boosting or adding new sessions, they need to make it clear, there's two ways to reschedule, and you can do either or or both, you can extend, you can boost, you can add new sessions, or both, and there's either, you can allow that the person accepting the request can either book up, they can accept up to the time canceled, or they can accept all the time you've offered, because we find that there's better for clients, there's better utilization of therapy, and better outcomes when you achieve more hours, I'll give you the language for that, does that make sense?  Yeah, absolutely. Start by creating that without instructions in the beginning, like before the booking steps, and then the scheduling preference would be moved up to like step, here, go next, go next, I'll tell you where to move it to, next, next, before this, so step three would be the scheduling preferences, and we'd explain there what the options are.  You can extend, can boost, right? You can boost. You could add your sessions, and you could decide if you want to do as much as possible or only do less, right?
+
+37:06 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, and do you think then we should have like a complete step with just like a notes box with all these notes and then they click next and go on to the book's existing page or like do you think notes we can add it here just like somewhere on the top?
+
+37:18 - Alexander Apfel (Horizons ABA)
+  I think the third step should be the notes with the preferences of schedule more, overscheduled, or limited. Got it.  Okay. Okay.
+
+37:27 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So the notes along with this one, the scheduling preference. Yeah.
+
+37:31 - Alexander Apfel (Horizons ABA)
+  Yeah. Okay. Awesome.
+
+37:33 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And then they will do that. And then on the last step, they can see like review your request or like, you know, review your, like, you know, what you canceled and all those things.  So they can just make sure that, you know, what that can.
+
+37:43 - Alexander Apfel (Horizons ABA)
+  Can you, can you set, can you change it when it says 350 minutes? Can you, yeah, do like however many hours plus minutes and then in parentheses, 315 minutes.  It should show both the hours and minutes and then the minutes. Yeah, absolutely.
+
+37:56 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, we can do that. Yep. Yep. Okay.
+
+37:58 - Alexander Apfel (Horizons ABA)
+  Okay. Jaboos, new sessions, great. And then they can just submit requests. And new sessions, it's just a new sessions offered, new sessions offered.  Okay, okay, got it, yeah. They submit and then, perfect, okay.
+
+38:13 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Obviously there would be a pop-up that, you know, just say, hey, your time is submitted, right now it's not there in the UI.  And then for the pending requests, for example, they go here, they can see the pending requests, I think.
+
+38:23 - Alexander Apfel (Horizons ABA)
+  So can you also, I want to be able to see, a person should be able to see, like a dashboard of pending requests.  That they have to address, like they're the recipient on, and then pending requests that they have submitted. Yes.
+
+38:36 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Right, yeah.
+
+38:38 - Alexander Apfel (Horizons ABA)
+  Like submission, like prior submission, do know what mean? Something like that.
+
+38:43 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, I'll just figure out what's the best way, like do we want two icons here or it's like, you know, request and then submitted versus pending.
+
+38:51 - Alexander Apfel (Horizons ABA)
+  know, you let me know, you let me know, I'm good with either one. Straight out like, you know, how people do it or like, you know, what's the best, yeah.
+
+38:57 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And obviously I just had these. Like Shruti create these, where obviously I don't think for one client there are multiple technicians, but then for one technician there could be multiple clients, so this view might make sense for a technician where he can see if there are multiple clients cancel the slots.  Yeah, that way, there are some clients who have multiple technicians, it's both.
+
+39:18 - Alexander Apfel (Horizons ABA)
+  Yeah, so I think it would work both ways that they can just see, yeah.
+
+39:21 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So for example, like they can go into the, Shara, like I can just skip this and this will again show up, like the tutorial would show up only once.  Like, you know, it's just the first time. And then again the same thing, the cancellation reason, think this is something we'll merge with the session boost because it doesn't really need to be a separate tab.  Again, they can, you know, accept or decline for here.
+
+39:45 - Alexander Apfel (Horizons ABA)
+  Yeah, let's see.
+
+39:46 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Okay, so I just, so for example, like, you know, they added 45 minutes, so they can say, I want to just do 15 minutes, or I just want to do 30 minutes, for example, right?  Like, so.
+
+39:57 - Alexander Apfel (Horizons ABA)
+  It's got to be more clear, like it's. Yeah. It's got to be Hold on, slow down. It's a little complicated.  So original was 90 minutes. Boost, just go on 20 minutes. Adjusted from plus 45. Yeah, just make it more clear.  They need to be able to see that their boost was adjusted the way they want it. When you click 15 minutes, let me see what happens.  Plus 15. It just shows up here, but I get it.
+
+40:20 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  It's not clear. Click adjust again.
+
+40:24 - Alexander Apfel (Horizons ABA)
+  When they click 15, first of all, 15 should light up. should be like green. Color green. then, yeah, it needs to be clear when they boost for two minutes.  That's the final, right? And like it says adjusted from plus 45, but it's complicated. You've got to show that 45 plus to 15 plus.  Right.
+
+40:44 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Do you think, I'm just, you know, now thinking of the ideas again, like me and should Indian work on this UI specifically, I, I, like this is not really usable, but then like a slider would help as well.  Like the prices you see. So it's like zero to 45 and then they can just drag and say 30 minutes, like, like a slide.
+
+41:00 - Alexander Apfel (Horizons ABA)
+  That is there, that they are increasing 30 minutes and, um, I don't mind the buttons because the slider slider is good when you're, when you've zero to a hundred and you can choose any increment.  We're only giving three options. It's four options. 15, 30, 45, 60. So I think the buttons are better. Don't you think?  Yeah.
+
+41:19 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah. And obviously like, you know, no one is going to extend the session more than 60 minutes, right? Because like options would increase if it's, if they're boosting the session by more than an hour or So the hard part with the buttons, it was, it's not clear.
+
+41:31 - Alexander Apfel (Horizons ABA)
+  Like you wrote select, reduce the map. It's not perfectly clear. And you might want to make this clear in the tutorial that because someone might say, oh, wait, am I adding 15 minutes on their 45?  No, I'm reducing it from 45 to 15. So you need to be really clear that that's what they're doing.
+
+41:46 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  That's yeah. Yeah. No, I'll work with you on this UI. We haven't really like, you know, changed this one yet.  Like it's same as what we had previously.
+
+41:53 - Alexander Apfel (Horizons ABA)
+  So again, like you might, yeah, you might also, let's say, let's say this case where they, they, the person offered 45.  You should add the 45 button there. And then when, that one should be green, so to show that that's the current proposal, none, leave none as blue the same way, because red makes it complicated, it's confusing.  And then whichever one they click to adjust it to, that one is highlighted green, so they know it's not 45 anymore, I've adjusted it out of 15.
+
+42:22 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, and I think the none, we actually can get rid of this, because if they're selecting, no, they just declined.  Green, you hear what I'm saying?
+
+42:30 - Alexander Apfel (Horizons ABA)
+  That they should all be blue, whichever one, except for the cancel button, whichever one they click, whichever, it starts with, the one that is offered by the client, let's say, should be green to start with, and whichever one they click becomes green.  Great, yeah, yeah, okay, got it, yeah, we'll do that.
+
+42:45 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And then I think, yeah, yeah, and I think- If can ask Chachipi if there's a better way to do this, like what better you want to this.  Yeah, yeah, I'm thinking, and then obviously like once they select a button, like there can be a small like, you know, boosted time.
+
+43:00 - Alexander Apfel (Horizons ABA)
+  it's 15 minutes or like boosted by 30 minutes for example like yeah yeah should be more clear exactly okay next again like you know they will see the new sessions that are there here they just you know can access something going back like it says like go back it says like um original 60 minutes it should say original forget the minutes say an hour and x minutes yeah no absolutely okay that will change yep um then we go then sessions are easier you can do it different ways whichever way the ui looks better it could be one hour and 20 minutes or 30 minutes or it could be 1.5 hours or 1.25 hours or 1.75 hours right you could do it like that right yeah i think one hour 20 minutes would be like you easier for everyone yeah yeah um and then the new sessions it's just easier like you know they just one more thing you don't do you could also do you could do throughout the interface you could do one hour and 20 minutes you might also just want to do a regular one toll in 20.  yeah one great One column 45. I think that's the easiest. People will get that.
+
+44:03 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, one column 45 would definitely make sense. Sessions is pretty simple. Again, the language don't mind here. It's just AI review your decisions, but it will just say, look at the slots you accepted or something like the better language for this year.  But then they just get what session boosts they accepted, how they adjust sessions, all those things.
+
+44:26 - Alexander Apfel (Horizons ABA)
+  Perfect. Do we want to get the ability to adjust the new booking session? Let's say someone offers a two-hour session.  Should they be able to say, I can't do two hours, but I can do an hour and a half that day?  I think we should. Yeah, yeah. I think we already do that in the other UI.
+
+44:41 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  We just didn't add that here. So yeah, it's just something that we had AI come up with. But yeah, I will definitely have that.
+
+44:47 - Alexander Apfel (Horizons ABA)
+  And what I wanted to do, though, is that they should not be able to reduce it to less than a one-hour session.  Right. Yes.
+
+44:56 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So yeah, we have a cap at like, you know, how, like the smallest amount. Exactly. Perfect. But yeah, this is the main thing that I want.  I thought like, you know, maybe just one view just makes it really clear for what I would need to do right now.  Like, you know, instead of having all the options in one single page, much better, much better.
+
+45:17 - Alexander Apfel (Horizons ABA)
+  Yeah. Yeah.
+
+45:18 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So yeah, I guess that's mainly it. Like, you know, again, the tutorials, you said that, you know, obviously the, the one with the, what we say, like this one is, is more better.  Like with the window, they have the tutorial, they can just slide through this, and then, you know, Much better.
+
+45:35 - Alexander Apfel (Horizons ABA)
+  I don't like when it highlights the page, and it's confusing. this is much better. Much better. Yeah. And they should always be able to access the tutorial again, of course.  Right. Yeah. Yeah. Great. And now, but one of the big changes I need you to make is on that moving the scheduling preferences and notes instructions to three and make sure it's very clear.  And you can send me a draft of the language and I'll clean up the language and add to it.  Yeah. Yes, yes.
+
+46:00 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So I think this is good. Like we're finalizing on this layout now. We'll obviously make the smaller changes and the coloring is not at all difficult.  We can, you know, you can just say, Hey, I want this color to be blue. I want this color.  So it just, yeah, I think this is now making sense. Like previously, but now it isn't making more sense or something like people would use.  Like previously, I was just making you update it. I was like, ah, I don't know. There are too many things that I'm looking at.  Right.
+
+46:26 - Alexander Apfel (Horizons ABA)
+  No, it's much better. I appreciate that you made the change. Now you got rid of the bar, the header bar that shows how much was canceled and how much was, was offered.  No, it would be still there.
+
+46:35 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Um, like this is like, you know, just a new idea that, that Truthy had. So we just spin it up real quick.  So, you know, a lot of the things are missing in there, but obviously there would be a bar like, uh, that should be.  Okay. So I think these are in the new years, it's not added, but yeah, obviously it would be there.  Right.
+
+46:52 - Alexander Apfel (Horizons ABA)
+  With the bar and for both the requester and the acceptor, right? Yes. And the canceler and the, and the cancel leader.  That should say, for the cancel, the canceler, it should say how many, you know, how many hours they canceled, how many hours they're offering for rescheduling, right, minutes, hours, whatever, hours, it should be hours, forget the minutes, hours, like hours, and then, and then for the recipient, there should be canceled, offered, and then accepted.  Yes. Because accepted could be less, it could be the same, right? Yes. It of course, be like a, I like that where it's like, way to go, you scheduled more than canceled, something like that.  Right.
+
+47:30 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah. So, for example, something, obviously, like another bar, there would be at the top, again, like, you know, for the canceler, they can constantly see if I add more, it just updates and, you know, all the, yeah, and then that, yeah.
+
+47:44 - Alexander Apfel (Horizons ABA)
+  Perfect. Okay. Great. So when's going to be, how, when do you think the next update on this will be?  I think tomorrow only, because there are not changes now.
+
+47:52 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So tomorrow, we'll give you with the, you the updated language and all the things we discussed, and then once we finalize, then we'll start working on the back end.  So, you know. Because backend is also going to be a bit time-consuming because there are a lot of the relationships and you know all those things we need to do and it's not to be.
+
+48:06 - Alexander Apfel (Horizons ABA)
+  Also, have you already set up, right you'll have to set the backend for importing the schedule right from him, you have to set that up, and then you already have the basic framework for the email confirmations, do you know who we're emailing when, do know how that works?
+
+48:23 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So yeah, obviously like you know the emailing is that, so let's say the technician is cancelling, they would you know select the slots, they would cancel.  That then sends an email to the client and the scheduling Horizons ABA.
+
+48:36 - Alexander Apfel (Horizons ABA)
+  Client, scheduling team and the BCBA. Yeah, oh okay the BCBA as well, yeah yeah yeah BCBA.
+
+48:42 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  The supervisor BCBA should be CC, okay and then what, then what's next? So then the client has a link to you know review the request and all those things so they can just you know, take a look, do their review, approve the decline.  And then once they submit then again it goes to the scheduling again tags the same people and then you know say.  Hey, your schedule has been updated, yeah. Exactly.
+
+49:03 - Alexander Apfel (Horizons ABA)
+  I'm trying to think, what do we want to do if people just don't respond or people don't accept rescheduling or things like that?  Like, oh, there might be an option in the recipient where they, oh, well, they'll, do we expect them every time the other side cancels that they should go through the thing and just decline, decline, decline, decline?  I guess so. Like they need to go through and decline everything. Okay.
+
+49:27 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Because if it make, if we make it easier for them, they might just, you know, like, for example, if we give them a button in email itself, if you just, you know, on a decline, I'll click this, they will just do it every time.  So, for example, yeah. I hear that. Okay, fine. Fine.
+
+49:39 - Alexander Apfel (Horizons ABA)
+  Okay. Good.
+
+49:42 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Okay. Awesome. Um, let me see. Okay. I think that's all that we have for now. Um, now I think we can go through the authorizations one, if I think that's, oh, and the, another thing I remember, uh, you, uh, you.  Send me an email about the treatment plan follow-ups where, you know, if a person is in certain stages, they should get a reminder that, hey, your review has been submitted, please, you know, respond to it and all those things.  So that actually is built up right now. It's just, think Jay is waiting to hear from Chris on that, on like the email templates and then the exact days on, you know, when they should follow.  But the architecture is there for that. Great.
+
+50:29 - Alexander Apfel (Horizons ABA)
+  So CC me on the next email with Chris to make sure if you're waiting on him. don't know if he needs to let me know.  Yeah, I'll just him.
+
+50:38 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  It's been pending for a week now, so I didn't even know that we are working on it. I was just discussing, hey, this is one other thing, and Jay said, oh, no, we already have it set up.
+
+50:47 - Alexander Apfel (Horizons ABA)
+  Great. And is it clear what we're looking for? mean, there's a few things, right? There's, number one, that dashboard.  I know you're building out that dashboard. Are you working on the dashboard? you done with the dashboard that you can find dashboard?
+
+50:57 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No, I think it's kind of like, you know, red. Right now, I'm not working on the dashboard, like these are the seven items that I went through, like kind of the top priority, so yeah, we're just speaking about that as what it is.
+
+51:07 - Alexander Apfel (Horizons ABA)
+  Basically, there's two elements, there's the BCBA follow-ups, there's making sure the BCBAs do what they need to do, and making sure the review team does what they need to do.  So the BCBAs, we want to set up a once or twice a week email, not every stage, it's simple, because I want to follow up, like I think Chris is going to send you, okay, three days after it's in their core and they don't respond, email them, it's too much.  So we just want, once or twice a week, probably twice, probably Monday and Thursday, a list of the clients where they have active treatment plans or progress reports, okay, what's the status, so is it, is it, I don't know how you track the statuses right now for the treatment plans, but is it in draft, is it in submitted for review, is it feedback submitted, is it submitted for approval, is it sent draft to parent, whatever the status is, and based on that they'll know if it's in their court or the other person.  And then all you then say is basically, here's the training plan, here's the status, here's the due date, the next steps due date, right?  And maybe there'll be a column like, who's court? Like, who's the point person now? Like, who's responsibility? Is it you or is it the review team?  Right? Just by one of them, his ability on everything that's in their caseload. Then, so there'll be another column for like, who's responsibility is it right now?  And then it'll say, then there'll be a column for the due date for the next step. Yes.
+
+52:36 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And it could be sort of past, right?
+
+52:38 - Alexander Apfel (Horizons ABA)
+  Look, I sent you an email for the days that each step should be done, right? So once it's submitted for the feedback submitted, they have two days to respond, right?  So that should be there. So what's the due date based on that? Yes. And then a link to the Google Docs and just click it and work on it.  Okay. Okay. Sounds good. So that's... For the BCBA, yeah, before I go forward, any questions?
+
+53:03 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No, okay, so right now, obviously, we have it set up in that, you know, like, it would wait for X days in every stage and then send up a follow-up, but now we would do it the way that, you know, just twice a week, but then, for example, let's say if someone just, like, let's say, yeah, I mean, like, let's say if review team submitted a feedback today, and then our scheduled email goes, like, right after the hour, do you think that would just, maybe, like, irritating for a BCBA that, you know, the feedback was received, like, just one hour ago, and then, you know, our email goes out, that ball is in your code, obviously, the language is going to be good in there, but then, they're like, oh, that's the thing, they're going to know, we're going to tell them, we're going to send you emails once or twice a week, so, it's automated, meaning, again, the way we're going set it up now, or Chris wants to set it up, is that every time a stage changes and they miss the due date, if email them, they're going to get, let's say they're working on five treatment plans, they'll get 10 emails a week, it's too much.
+
+53:58 - Alexander Apfel (Horizons ABA)
+  Right. Right. We want to condense it to one or two emails a week. So it doesn't matter when the thing happened.  could have happened. The next stage, the last stage could have changed a day ago, a minute ago, or three days ago.  It doesn't matter. It's fine. It's the same. No, they're getting emails twice a week with an update on all of their, all their accurate reports.  Right.
+
+54:15 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And then if, if a BCBA is on five treatment plans, they should just get like a update, like a summary of all five, right?  Five tables for each or like a table with all the five treatment plans that are the part of, and then, you know, what is the status of each treatment plan or the progress report, right?  Right.
+
+54:30 - Alexander Apfel (Horizons ABA)
+  Correct. Let me show you in Excel what I mean. Let me show you. on. I'll make it separate. So it be, let's say for the BCBA, right?  So it would be. B2.
+
+54:45 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Sorry. You're good. Can you see it?
+
+54:48 - Alexander Apfel (Horizons ABA)
+  Yeah. So it be client. Yeah. Right. Um, TB slash PR status. Yes. would honest.
+
+54:59 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No,
+
+55:02 - Alexander Apfel (Horizons ABA)
+  And again, I'm envisioning it as a table and an email, which I think is the easiest, in theory, you can make it a link to an application, to a web app, that has this information for each BCBA, but then you have to customize it for each BCBA, it's little more complex, right?  Yeah, we start the table and then, if needed, we can... Exactly, we'll take it from there. Supply, TPPR status, responsible party, and I'll show you what I need for each one, okay?  Yeah, only hard part about the email is it might be very wide in the email, not to scroll across, right?  So that's the hard part, right?
+
+55:38 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, but if you see one of the emails that we send out for the client recommendation, those emails, if you see, it still has four or five columns, but it's still in the one view.  Obviously, if they're looking in the mobile, it's going to be difficult, but then...
+
+55:54 - Alexander Apfel (Horizons ABA)
+  okay, we can play with it. Responsible Party... Yeah, let's first get the content in and then we can change...  Formatting later, responsible party, due date, and then it's the due date, watch, I'm going show you everything, due date, and then it's link, right, so it's going to be, let's say, John, Steve, Paul, Samantha, okay.  Yes. So, TBR status, let's say, draft. Yes. In draft, right? Mm-hmm. In draft. Submitted for review, let's say. submitted for review, and again, we have a status already in Monday tracking this, right?  Yeah, we do, we do. We have a status, yep. Feedback, submit, feedback, yeah. say, and then submitted for approval.
+
+56:50 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah. Yeah. And one more thing, like, question, do we want to do for the next stages that are there, like, you know, where we send the draft to the parent for, like, you know, Okay.  Do we want to tag parent in there sometimes, or just for the VCBAs? Let's do that next. Okay.
+
+57:08 - Alexander Apfel (Horizons ABA)
+  Sent drafts to parent. Because then this is on the VCBA to call them and make sure they go over on the phone with that.  Feedback submitted. So this is the VCBA, it's your approval review team. And you should probably sort it based on when it's a responsible part of the VCBA, so they know, right?  It should be clear indicator of what's in their court, what's not. Maybe it's different color highlighted or something, know what I mean?  It should be clear, right? So let's say the due date, today's the 24th, right? So let's do 12, 24, 25, 12, 12, 20, 25, 12, 28, 25, let's do 12, 30, 25, 12, 20, 25, 25, 12.  So, okay, so if the due date, if the due date is past due, It should be red, it should be highlighted.  And depending on how far past it's due, it should be more red. Yeah, right.
+
+58:08 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And I think we will sort it by the due date first, because if there is red signs, in between it would make sense, but it's just a red block that is, you know.
+
+58:19 - Alexander Apfel (Horizons ABA)
+  What about the due date? Then also make it clear if it's not on them, if it's a review team, it's not as, right?  Like, maybe you have two sections, like BCBA and review team, so they're not overwhelmed. Right? Yeah. Yeah. And then there should be a link to the Aura, it's simple, I think that's all they need.  Cool? Yeah. They do. Yep. So then, that's once a week, hold on one second, hold on. Yeah. Javi, I need a few minutes, just going have an important phone call, hold on one second.  Yeah.
+
+58:59 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Take your time. Okay. Okay. Bye.
+
+1:16:56 - Alexander Apfel (Horizons ABA)
+  Abhijeet Alexander abhijeetgandhi02 and Horizons ABA. Abhijeet Gandhi, Alexander Apfel, abhijeetgandhi02.com, and Horizons ABA. Abhijeet Alexander Apfel, Abhijeet Gandhi, Okay, so here's, this is what the email that will go to the BCBAs, then it's  For the review team, there'll be a separate email, and I want two ways of this being sent to that.  So one way is an email like this, every day in the morning, an email goes to the review team, it'll have client, PCBA, this one I would only send in the ones where they're the responsible party.  So there's no responsible party, it's in their core, TPS, SPR status, due date, due date, and then link, simple, right, and the rest you get, I don't think I need to type it out, right, let's say John, Fathom, Faye, you know, Melody, Kinglderry, Madeline, Jaska, submitted, or...  You submitted for approval, due date, 12-25-25, 12-26-25, same thing, right? Make sense? Yep, yep, it does. And this would be right?
+
+1:19:10 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Say again? This would be daily, right, for the review team? Like it would be a daily email in the morning.
+
+1:19:16 - Alexander Apfel (Horizons ABA)
+  every single day, exactly. then the other thing is that the... So that would be for the review team, but I also want that in the dashboard, we'll give access to the dashboard to the review team, and there will be a section that kind of looks like that table, right?  Like, client, BCBA, status, link, so they can just go into the dashboard every day in the morning, and they don't have to wait for that email.  They go into the dashboard, they click the links, they submit, etc, etc. Makes sense?
+
+1:19:48 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yep, yep, it does. Yep, absolutely. We can set it up. Awesome. It's gonna be great.
+
+1:19:53 - Alexander Apfel (Horizons ABA)
+  Okay, let's keep going. Okay, we're to go to my list. We talked about the onboarding, talked about cancellations, we talked about, and cancellations I don't even know because we haven't like tested it yet, it could be once we start testing it, there'll be a whole new slew of ideas that we have.  So once you get to the next production ready, I guess, with the back end, I don't know, you'll figure out what the next step is and we'll want to test it, right?  Yeah. Okay, technician check-in, they're almost done? Yes. Client workflow architecture build-out. Are you in the middle of that?
+
+1:20:20 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No, I haven't started with it yet, but yeah, that's my goal over the next two days. I'm just gonna work on that, yep.
+
+1:20:26 - Alexander Apfel (Horizons ABA)
+  And I know this is hard work, it's hard work, it's a lot, it's a Okay, the Gmail labeling tools, you showed it to me briefly, I had some comments for the next steps there.  Yep. Client, treatment plan reviewer, any updates on that, on the AI reviewer?
+
+1:20:39 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  We are trying a couple of things there, the one thing we, like, just the update that I know from the team is that, if you know, we discussed, like, we wanna have two panels side by side, where, you know, the comments and then, but Google doesn't really allow us to do that, they're like, you you just have this agent, maybe, so that's that.
+
+1:20:54 - Alexander Apfel (Horizons ABA)
+  But they're working on the other.
+
+1:20:56 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So yeah, we're still figuring out if this, you know, we worked out the Gmail labeling tool first because it was a low hanging and then, you know, it was inside, but the ability is limited.  So I'm just trying to get, you know, what we can complete. Totally. Totally.
+
+1:21:09 - Alexander Apfel (Horizons ABA)
+  And then the Sapphire finger checkbox, I'm not worried about dashboards. It's not an urgency. You've got to worry about equality assurance, notebook reviewer, that's off the list, not doing that anymore.  So, okay, fine. Okay. So now you want to, you want to go through authorization points, right? Yes. Yes.
+
+1:21:23 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And then, uh, actually I was looking at the notion document for the onboarding and we kind of have decided, like we would focus on the credentialing and some of the, like, you know, the company, uh, the assessment, all those things later on, because right now it has a lot of, like the, actually the assessment one is completely working right now, the way it is.  So we are not going to touch that. It's just, you know, like a couple of statuses that Kara needs to change.  And that's that, right? Like the, what are you about?
+
+1:21:49 - Alexander Apfel (Horizons ABA)
+  What are you talking about? Oh, sorry.
+
+1:21:50 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So in the onboarding flow, remember you mentioned about the competency assessment. and whether those are automated and all those things, so that process is actually completely automated and the only thing we decided was, oh, let me actually share my screen.
+
+1:22:04 - Alexander Apfel (Horizons ABA)
+  I remember Kara had that issue, Kara keeps saying certain things are not correct, they're broken, and she said we'll fix it when we deal with the onboarding workflow, so go ahead.
+
+1:22:12 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, so first of all, if the BT, you know, if it's BT, then the 80, 40 hour course is there, but then we actually, the flow, so the main goal is once they move to onboarding, these are the, you know, the six, seven items that we do that Chris usually handles all this, but then actually when these sub items are all complete, then there is this manual process of like, you know, Kara actually looking through and, you know, to going them to therapy schedule.  Like those are all the steps that are done manually.
+
+1:22:41 - Alexander Apfel (Horizons ABA)
+  Okay.
+
+1:22:41 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And we discussed that we'll do, we'll keep it manual for now. I will like you said, you know, because, you know, it just involves a lot of, like, you know, looking at different views and boards and then, you know, that one.  And another thing, so yeah, I'll just share the notion. Um. Yeah, this notion doc is really helpful. was just going through it.
+
+1:22:59 - Alexander Apfel (Horizons ABA)
+  up, scroll up the competency assessment, scroll up, scroll up, scroll up, there's bigger list, hold on, scroll up, scroll up.  Oh, okay. There, hold on. So we have this in the working. competency forms upload status completed, so all that, that needs to be rebuilt into the new workflow.  You see number 12 and 13? Okay.
+
+1:23:15 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, I think then, but it kind of is mentioned that Unite's in the working automation section, so we didn't, know, prioritize that, we'll just like, okay, but yeah.
+
+1:23:25 - Alexander Apfel (Horizons ABA)
+  We'll have to talk to Kara how we want to rebuild it. Okay, fine. Exactly. Yep.
+
+1:23:30 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Right. Yeah. So we just, I think we prioritize, you know, like the crisis workflow because he's like spending 15 hours a week on that only.  So that just. Okay.
+
+1:23:38 - Alexander Apfel (Horizons ABA)
+  Yeah. Perfect. Yeah.
+
+1:23:40 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So yeah, I think now we can just go through the, the authorizations. Yeah, let's do that.
+
+1:23:46 - Alexander Apfel (Horizons ABA)
+  Was there one more thing I wanted to ask you? No, I think we're good. Yeah. fallen. You spend a we'll have ask again.  Also, you added the hit bot to add the insurance information, that's in progress? That's in progress, yeah.
+
+1:24:08 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And on that one as well, we find out that uploading the documents, I think you saw the email about Juliet that the documents were not uploaded and we did really set it up as well, so it's just too difficult to upload the documents because you can click on upload document, but then it opens up systems box, where you have to select the file from the local and then it's outside of the browser window.  So when you upload a document, it's like systems box now, so, you know, just like then you'll have to write the code for operating system and I don't like it would just take weeks to do one thing.
+
+1:24:42 - Alexander Apfel (Horizons ABA)
+  Okay, so that will have to continue to be manual where you notify Juliet, please upload X, and Z. XYZ, yeah, the document upload for now, we'll keep it manual.  What we should do though, we should push them to build an API to do that. Yeah. I think that would just save.
+
+1:24:57 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And I was actually looking at their adding APIs. They right now just added for get user details.
+
+1:25:02 - Alexander Apfel (Horizons ABA)
+  which is good.
+
+1:25:03 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I think they're at least working on like, you know, updating the APIs.
+
+1:25:07 - Alexander Apfel (Horizons ABA)
+  Right. Okay, good. Fine. Let's keep going. What else do we have? Okay, so we want to talk about authorization forms, right?  You want to pull up your list?
+
+1:25:14 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yes. So let's go through this. Yep. So let me just. So I think. Okay, so these are Evernote, Signal, BCB.  Yeah, so there are five forms and we already went through the MD Medicaid prior out form. This is the one that we automated right now, so I just opened up the other four.
+
+1:26:53 - Alexander Apfel (Horizons ABA)
+  Is it hard to set up that? All
+
+1:26:58 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I think it would be like a few hours for each form so it would be like three to four hours for one because it just with the templates obviously for example if you just convert this PDF to Google Doc it looks much worse like a lot of the formatting is lost and all those things so we have to make sure that you know everything's aligned because I know that it's accepted with Google Doc but it actually has to look a bit similar as well right like it cannot look completely different.  Yep okay so I think this is for the eight now I think we can just start with this and okay yeah so okay so yeah do you want me just to tell you what's what yeah yeah so you know I just record it in Fathom and then yeah perfect yeah okay so member name your the name of the of the client you
+
+1:27:58 - Alexander Apfel (Horizons ABA)
+  Member telephone number is the parent phone number. Case reference number leave blank. Member ID is their insurance, the member ID.  It's in Monday, right? So EDNA will always be a primary insurance, not secondary. it would be member ID would be the primary insurance member ID.
+
+1:28:20 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Date of birth, date of birth of a client, simple, right?
+
+1:28:25 - Alexander Apfel (Horizons ABA)
+  Provider or provider group name. So it'll depend. Oh yeah. Horizons ABA. Oh, I mean, to be safe, it depends on the state.  So we'll give you a list. Either we'll give you a list that you'll store in your own records, or we can add a section.  Monday, we'll figure that out. Or the provider of group legal name. So if it's Colorado, right now it's a Horizons ABA Colorado LLC.  We're actually changing it to Horizons ABA Front Range LLC. It's a different entity, company, Maryland, Rise ABA, and DLLC, every state has its own entity, so we'll give you that list, make sense?  got it, yeah. Okay, provider, provider group, TIN, so, oh, so we'll have to check off whether we're participating or non-participating, in Maryland and Colorado, we're participating, but in the future, if this is the same form for other states, we may not be, so we'll have to, we'll have to put it into Monday, which, which states are we participating in?  Yep, yep, right. Network status participating, TIN number will be the EIN, the EIN for that, EINs have a tax ID, we'll give you the EIN for each entity, so we can either store that in Monday or I can give it to you, it happens to be, right now I have all that information, I think I'm to add it, hold on, I have all this information in a Google Sheet, you see this?  Oh no, let share my screen. Have all of our.... Any information in a Google Sheet? Do you see it?  Just a sec. Yeah. So right now it's in a Google Sheet like this. I'll probably move it into a Monday board.  I'm going to test that out. I'm going to test that out. Yeah, I think we discussed that as well.  It'll be easier to connect to it, right?
+
+1:30:15 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, yeah, yeah. Let me make a note to do that.
+
+1:30:26 - Alexander Apfel (Horizons ABA)
+  Okay. We'll create a board for that. Okay, next. Then provider group full address, the same thing. You'll need the address.  We'll pull it for Monday. I'll make a board for it. It'll be the easiest way. Provider group phone number.  That will just do the main line. 888-933-8248. Okay. I can chat that to you again. can always send that to you later.  This is our main line. should always just do that. Okay. Name, telephone number, email address, a contact person for this request.  Hold on. Okay. Oh, so this is going to be interesting. So as we name, let's do my name, Alexander Apfel.  Telephone will be the main line, the main phone number. And email is going to be, I think we already created one.  It's going to be authorizations at horizonsaba.com.
+
+1:31:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Okay. Let me just make sure we created one.
+
+1:31:29 - Alexander Apfel (Horizons ABA)
+  Yeah. Authorizations at horizonsaba.com. Okay. Got it. Okay. Okay. Next, request a start date of procedure or service. So that's going to be whatever the start date they put in the treatment plan.  There's going to be requested off start date. If it's for the assessment, you just do it, whatever the date that the form is being filled out.  Don't worry about it. about If it's for, if it's for the treatment off. So it depends which type of authorization request it is.  Oh, okay. long has an owner received ABA services? would leave that blank. Is voicemail confidential? Yes. Okay. Yes, always.  Current DSM-5 diagnosis code. I would just do the F84.0, the autism diagnosis. Same thing every time. Okay. Diagnosing provider, so that's going to be, you know, we extract from the ASD report who is the doctor and what's their, right?  And then if there's ever a time where you don't have, we don't have that information, the extraction didn't work, they'll have to notify authorizations.  Hey, meaning any time for any of these forms, if we, like everything so far that we've talked about is required.  So if we, we cannot pull the data for and you can't get that information, an email should go to authorizations.  Hey, we couldn't receive, find this information. Can you get this information? Right. Okay. Okay. Okay. A, of sending that to you or to the system to then add it, right?  Does that make sense? Yep. So maybe it'll be like, maybe they'll create like a custom form of like, hey, we couldn't get this information, please add the information so we can update the form.  Right, yeah, yeah, yeah.
+
+1:33:11 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  yes it does. Yeah, we'll figure that out like, you know, how once they update, how we are going to autofill this automation.
+
+1:33:16 - Alexander Apfel (Horizons ABA)
+  Because the idea is you'll see with this stuff is like we need to build the basic infrastructure, but we also need to deal with the real life challenges and problems that are going to come up each time we try to do this.  Because there's always going to be challenges, right? Right, yeah, yeah. No, I agree. Yep. Well, want to come up with that on the front end.  Okay. Select a CPT code which best to describe the services. Okay. So we're always going to request 97151 because that is, meaning, I want to make sure you understand the ABA therapy process more because I'll make it easier, right?  I think you are going to do. But 97151 is the assessment code. So if it's an initial assessment request, then all you're clicking off is 97151 and then you request, I think it's like eight hours.  For every. For an initial auth, you're always requesting 8 hours, and actually not always. Blue Cross Blue Shield allows you 12 hours, so we'll request 12.  If it's Aetna, I think we request 8. Then let's say we're requesting treatment auth or ongoing treatment auth, you're still also requesting 97151 because you're requesting the reassessment hours.  that make sense? Yep, yep. Always requesting 5.1. And again, you'll have these notes in the Fathom, right? And then for the treatment codes, you'll pull from the treatment plan.  It's usually going to be 5.3, 5.5, and 5.6. Some of the others, but it will all be in the treatment plan.  And then you'll pull it based on the way they put in the treatment plan. Now, where it's a challenge is that, you see how they did it hours per week per month?  So we have to decide, once we're done going through these forms, we're going to say, okay, what options do they give us in terms of how to make the request?  Meaning what you... We may decide to tell all of our BCBAs from now on, please use this for your treatment plan requests, hours per week, or hours per month.  We might also say, depends on the insurance company you're working with. So we might say, this insurance company, use this, right?  But we might have to create a system where no matter what they put in the treatment plan, you know how to convert it.  Does that make sense?
+
+1:35:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, I think we'll set that up. Yeah, it's not a little difficult. think for now, again, for every form we populate, we're obviously going to set it up in a way that it translates whatever the hours or language is into the required for this template.  So yeah, yeah, we'll definitely. And then we might just populate it in Monday as well. think more information we populate into the Monday, just act as a verification layer of, you know, everything entered, what's going to be.  Exactly, exactly.
+
+1:35:52 - Alexander Apfel (Horizons ABA)
+  And by the way, in Monday, I'm just thinking, if it's easier for We could do this. Hold on, let me show you the mundane here.  Meaning, because let's say they put in, they're requesting 160 units per week, but if the form requires us to put it in the terms of hours, we have to convert units into hours, which is 160 divided by four, so it'd be 40 hours per week, or vice versa.  Let's say they put in hours, but the form requires units, you have to change it, right? So what we could do, if you think it's easier for you, is we could, in the authorization dashboard, and you see how nuanced this is, but once you set it automated, it's going to be great, I think.  No, absolutely.
+
+1:36:34 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  mean, yeah, it's, I mean, when someone is doing it manually, it's just a pain for them, right? And then God knows how many forms they're submitting each day, every day.  Right. If we want to scale, and we want to submit a hundred a month, it's, it's 500 minutes a whatever it is, right?
+
+1:36:48 - Alexander Apfel (Horizons ABA)
+  It's crazy. Okay. Maybe more, a thousand minutes a month. Okay. So we set up these, this, this system, right?  Yeah. The way I set it up was we have to, like, you pull from the treatment plan, or based on the form, are we requesting units or hours, and then what's the frequency per week per month, and then what's the requested amount, meaning that you know if it's hours, so it's 40, right?  Now, if you wanted, if you think it's easier, you'll tell me. We could set it up differently, where it's, like, this is the requested amount, and then it's, like, there's another, let's say, like, numbers, it's, like, requested units.  Requested hours, so that it automatically calculates, so let's say we put in hours, then it automatically pulls 40 into here, and then it multiplies that by 4, 160.  You tell me if you need it. I don't know if it's comp- I don't know how we want to do it.  mean, either we make it that the Monday board has exactly what we requested, or we show all the calculations so that it can automatically pull into the forms based on the way we want it.  I don't know. What do you think? I don't think we really need to do it in Monday.
+
+1:38:11 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I think like it's a simple calculation, but we definitely put what we put in the form. Like we'll say, this is what we put in Monday form.  So yeah, we just know. Okay, this is a perfect, perfect.
+
+1:38:24 - Alexander Apfel (Horizons ABA)
+  Okay, great. Great. Okay, so then let's scroll down and then any or any ABA hours being requested during class?  Just write no, always write no. At least in the meantime, we'll figure that out. If we need to change that, we'll let you know.  Okay, page two. Oh, that's so much. Who's supervising directly ABA services? Okay, so that one. Okay, so it's gonna depend.  Again, this might get so complicated. Mm-hmm.
+
+1:38:50 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  For the initial assessment, we're not going to yet have assigned a BCBA.
+
+1:38:53 - Alexander Apfel (Horizons ABA)
+  So we're going to give you in each state, a standard. VCBA. Okay? We'll give you a placeholder VCBA that we'll put in there, okay?  Is voice on confidential? Yes. Oh, we're going to have put in her name, credential, and phone number. Okay, so we'll have to give you that information.  So we'll have to give you a list in each state of who the standard VCBA is. Go ahead. If yes.  Then, is a member receiving an additional services? Oh, I would write, I don't remember, in the Fathom, do you remember in the Fathom with Brittany?  Maybe you could look back at it. What did she say if they click yes or no?
+
+1:39:27 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Okay. Yeah. I don't remember exactly for this form. So yeah, I'll look into it. Yep.
+
+1:39:33 - Alexander Apfel (Horizons ABA)
+  I would write no, probably. But let's ask if we have to check that off. It'd be easier if we just left the blank, because otherwise we'd have to know when we're requesting the off, are they receiving other services?  Okay. Checkbox 2. So let's look at that and let me know about that. Checkbox 3. Now just click no.  3. Checkbox to ensure the following elements are met. Yep. Just click yes. Just click yes. VCBA. Okay? We'll give you a placeholder VCBA that we'll put in there, okay?  Is voice on confidential? Yes. Oh, we're going to have put in her name, credential, and phone number. Okay, so we'll have to give you that information.  So we'll have to give you a list in each state of who the standard VCBA is. Go ahead. If yes.  Then, is a member receiving an additional services? Oh, I would write, I don't remember, in the Fathom, do you remember in the Fathom with Brittany?  Maybe you could look back at it. What did she say if they click yes or no? Okay. Yeah. I don't remember exactly for this form.  So yeah, I'll look into it. Yep. I would write no, probably.
+
+1:40:35 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  But let's ask if we have to check that off. It'd be easier if we just left the blank, because otherwise we'd have to know when we're requesting the off, are they receiving other services?  Okay. Checkbox 2. So let's look at that and let me know about that. Checkbox 3. Now just click no.  3. Checkbox to ensure the following elements are met. Yep. Just click yes.
+
+1:40:55 - Alexander Apfel (Horizons ABA)
+  Just click yes. It's like, check the box, the member displays impairment in the following area, attached reporting data, you have to ask, ask them, ask, go back to the Fathom of Brittany, and I must have asked her what to do here, because I don't remember what she said, I can't imagine looking up each time, don't know if we click all of them, I don't know, ask, ask Brittany, okay, then please include, that's all fine, and then form completed by, and then we'll just do, we'll put, I guess we'll put my name, just co-founder, we'll figure that out, we'll figure that easy, can figure, you always ask me that later, so right now, just do my name and co-founder, okay, got it, awesome, that's it now, I don't think we missed anything, about, yeah, that's all, okay, perfect, so now this is for the Anthem, So, guess, yeah, the member name is, again, like, these are the same information, the member ID, date of birth, gender, exactly, simple,  State of residence, that's where they live, right, that's easy. Yes, it's conducted in the same stages. Yes, caregiver name, that's the parent's name, phone, email, diagnosis, that's the diagnosis code, and diagnosed by whom, who's the doctor, simple.
+
+1:42:10 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yes. So this is Horizons now, TID. Name is the legal name, TID is the tax ID that I'm going to have in the Monday board, MPI is also going to be in Monday.  Agency phone number, yes, it's confidential, it's the same phone number. Facts for approval, so I'll give you the fax number also.  Let me give you that right now. Let me put in the message.
+
+1:42:35 - Alexander Apfel (Horizons ABA)
+  Before I forget, you were building out that database, like the matrix, based on this call, and it's going to get bigger and bigger because we have different billing nuances, and I'm debating, I think it's good to keep it all in one database.
+
+1:42:51 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Like every peer we work with, assessment.
+
+1:42:57 - Alexander Apfel (Horizons ABA)
+  Authorizations, credentialing, billing, everything should be, I think, in one database, just tags for different maybe properties, like what we're trying to deal with.  Did you already build out the database and what system are you using for it? No, I haven't built out like a database database for it, I just, you know, like...  opening product table. Yeah, and then I pasted it into Notion, like, you know, just that. I don't know, like, Notion, obviously, because I think even if we create like a database, I think we need to have an AI with it to answer our questions.  Because, as I said, it's already so much bigger and then it's going to get bigger, so we might need to act like, you know, yeah, hey, can you find this information for me and then maybe just...  Notion has search, you can search in Notion, it's a pretty dynamic search, it's not completely AI driven, but it's a pretty good search, you can search the information in the database.  But, again, I guess the question is, yeah, I mean, should we use Notion, should we use Monday? I don't think Monday is good for this.  Nah, I mean, Monday, like, you know, the database won't really work, so Notion, I think we'll start with the Notion and then if it's seemingly...  Mori... What I want to figure out, though, is what's going to be the best way to add information. it's like, there's just going to be a huge database.  Like I could send you a list of what the different properties will be or different like things we're going to track, but it's going to be anything discussed here in terms of like how to submit, how to submit to insurance, what the phone number is, contact person, how you receive approval, yada, yada, yada, like how long it should take all that.  Then for authorization, there's going to be different rules. We'll have the credentialing guides for each payer. There's a different guide.  Then there's going be different setups. It's going to be like, let's say within Arizona or different states, there's to be main Medicaid.
+
+1:44:36 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Then they also have something called MCOs, which are managed care organizations, which are subdivisions of Medicaid. And they might have different nuances when it comes to billing, but not different nuances for authorizations.
+
+1:44:46 - Alexander Apfel (Horizons ABA)
+  They might. So we have to like, we're going to have to have every payer also, but also it might be like, you know, what payer type is it?
+
+1:44:53 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Commercial Medicaid MCO. If it's. If an MCO, what is it a sub-division of, what is it a sub-payer of, it's not that Medicaid, right, the Arizona Medicaid, Mercy Care is an MCO, it's a sub-thing, it's what state, what state is it in, right, so I have to know what state, then all these different metrics, and then we're going to need, yeah, and so then, so that's what already thinking about.  I could start sending you information on this, but we're also going to need to know, like, what, I need a way to add information to the notion, so I don't know if there's going to be an easy way to do that with AI, where I upload it to you and you can add it, or if I just manually add it to the database, so guess we'll figure that out as we go.
+
+1:45:34 - Alexander Apfel (Horizons ABA)
+  yeah, depending on, like, you know, how we set it up the database, like, if it's just a table format, then it would be as simple as, like, adding a new row, but then if it's a bit complicated, then how do we add it, like, yeah, so all those things, so.
+
+1:45:44 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Okay, fine, we'll take it from there, okay, fine, let's go back to this, so if you just let me know, I mean, you let me know, maybe we should already start building out the notion database, what do you think?  Yeah, yeah, yeah, I think because the, the. The thing that I noticed, like, obviously I was able to pull the information from the Fathom on that, but again, like, I think it's something we should do together because, again, you have an idea and then, you know, once we set that up, OpenAI gives me metrics and all those things, I understand 80% of it or maybe 50% of it, but it's just like, you know, I'm not confident on what I'm building, if it's actually helpful or do we need to build it in a different way, so, yeah.
+
+1:46:19 - Alexander Apfel (Horizons ABA)
+  Totally. Yeah. Hold on a second. The big question I have, I'm curious from you, is should the payers, payers on trans companies, should it be the rows or the columns?  Right, yeah. I think payers would be the rows, I believe, because each pair has these properties of, like, you know, what goes into.  Yeah. So like, I don't know, like, because for each pair, there is a document, right, that we need to, the PDF that we need to submit.  And then each PDF is going to have its nuances of like, you know, certain information of like, you know, what we put in this field or what we put in that field.  I'll tell you the problem with that. Let me share my screen. Yeah. I'm sorry. Are you still good on time?  Are you okay? Or do you have to hop off? Yeah. Okay. Okay. I really appreciate that you're always available for me.  It really makes such a difference. Okay. So let's say I'm going go in now and create a database. Okay.  Let's do database. It's your full page. Okay. Payer. Knowledge. Database. So let's say, I think we have to, payers across the top.  I don't know. I'll tell you why. Because let's see. you. I want there to be, unless we create separate databases for authorizations, credentialing, billing, maybe.  I'll tell you why. Because let's say we might want, let's say there's end up being 250 different things we need to know for every payer, right?  Or different things that we're storing. It might be a file, it might be provider manual for every payer, might be enrollment application template for every payer, manual, stuff like that, right?  URL, portal, contact, right? So we might want to label each of those, what do want to call it, each of those pieces of information by the type of information they are.  So it might be a general piece of information, like a follow-up contact. It might be credentialing specifics, it might be a credentialing contact, it might be a credentialing rule or credentialing form or manual.  It might be an authorizations related piece of information, like the stuff we're talking about now. And it might be feelings.
+
+1:48:55 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Thank … … So in order to do that, have to kind of tag it, right?
+
+1:49:00 - Alexander Apfel (Horizons ABA)
+  So you have to tag it. So the way you tag it in Notion is you add a property, so it would be like a tag, right?  Yeah. And then it would be select. Let me give you an example. Okay. Let's do Provider Manual, Billing Modifiers, Prudentialing Manual, Prudentialing Contact Person.  And let's do Auth Form Submission Process Type. Okay. Good. So this is going to be, let's do General. Mm-hmm.  Filling, yep, see, and then this will be, so then, and by the way, there'll be more, so it'll be like this, no, no, oh, oh, it gets tough, yeah, it's almost, it's almost like we need a three-dimensional, you know, which is hard to do.  That are three-dimensional, right, isn't that a thing, like access, like real databases, different map linking data, I don't know much about databases, if you know more and you can learn more, that'd be great, so let's say it would be, let's say it would be, we might have to go, dude, we might have to add, because you have to filter, you want to be able to filter and search both ways, I'll show you what I mean, so let's say we add the payer, so let's say it's like, Anthem, BCDS, CO, this is what I'm thinking, So  Right? And then... Oh, it's tough. Oh, it's really tough. Because it's meant to be done the way you're suggesting it.  Because what I envision is that, okay, so then here we upload a file. The problem is the columns are the ones that designate what you could do in that field.  Mm-hmm. Yeah.-hmm. Yep. So it doesn't really work, right?
+
+1:51:29 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Now, let me explain to you the reason why I wanted to do it this way.
+
+1:51:33 - Alexander Apfel (Horizons ABA)
+  Let me show you. This is tough. I don't know what to do. Let's do Select. Maybe No Ship isn't the best place for us.  Maybe you could research this. Let's do Maryland, Colorado.
+
+1:51:51 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Oh, it actually doesn't even work because the state is not based on this. It's based on this. office early.  Gracias, So stake would almost have to be, it's almost like we'd have to add a row for stake. The problem is you can't set the type of field across, understand?  Now the reason why I wanted it this way, initially I thought about this, right? Because you can group by like this.  You see this? Yeah. Mm-hmm. So this is based, I grouped it by the tag. Right. Okay. I see. Yeah.  But what we just talked about it, it doesn't help us with this other problem, right? Yeah, yeah.-hmm. You understand?  So here's what I'm getting at, right? So the other option, let's do it the other way, just because I think visual makes it easier.  by way, maybe you'll take this information and ask AI. Yeah, yeah. First all, do you guys have any thoughts before I go forward?  Yeah. So, yeah, I get like, we could definitely, wouldn't. Yeah. Yeah. Yeah. So as you said, it's, it's a multidimensional, right?  So it's not like traditional stable format that we do, but we do play with like, you all the databases all the time where, you know, you can store data in different structures.  So whether it is like something like SQL, where you have like one table just for, let's say the one entity is pairs, right?  And then pair has X properties, but then one of that X properties has like property related to state, something like that.  So then you connect it to that. So that's just like the, you can just serve for like ER diagram.
+
+1:53:39 - Alexander Apfel (Horizons ABA)
+  It's called as ER diagram entity relationship. So that actually represents the whole relationship. And then you just, you know, set it up in the database, whether it's, yeah, because What software would you use?
+
+1:53:55 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So So again, like there are many databases, like, you know, the one example is like MongoDB, where it's like, it's called MongoDB, it's, yeah, so where you can store like a non-structured relationship as well, but then are, then there are databases like SQL as well, which allows us to store like, you in a structured manner, where it's like collection of tables that are linked together, basically.
+
+1:54:18 - Alexander Apfel (Horizons ABA)
+  So, yeah, yeah, I think that would need like me really having a really well understanding of like, you know, each and every, as I said, like, you know, the column or the properties we want to add, so then we can just come up with this year diagram, after that, it becomes a lot easier, and then we can just, you know, have you add the information, anyone just, you know, add the information in there.  So, by the way, here's what I'm looking at now further, maybe this will work, meaning, so, like, yeah, obviously, we want to keep it simple, if we can, if not, we'll go with SQL databases, and again, what software, you said MongoDB?  Yeah, so it's more something that we, you know, use in the coding. Where you want to manage users and everything, it's just like different data structure for storing data, like as the tables in one data structure, but then this is like the non-structured database where it's like more of like JSON or something.  Okay, let's think about it, because if we could do it with a regular table, that's better, right? If we could keep it simple.  Absolutely. So let's say we do like this, let's say each payer, right?
+
+1:55:20 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  State, payer type, Medicator, MCO, right? And then it's like parent will be like parent-payer.
+
+1:55:25 - Alexander Apfel (Horizons ABA)
+  Let's say parent-payer, parent Medicaid, if applicable, right? Okay. Then we would do, then we would do all the different metrics.  So we would do, you know, provider manual, this would be a file, right? There's an option for that. don't know if there's an option for file.  Do you add a file? No, there is the file and media below in the first. There you go. Provider manual, credentialing, contact.  So maybe we should just do it this way. The only downside is that you can't tag a property that I know of.  It would be cool if they changed that. Then it would be great if you could tag a property that this is a certain type of property, so then you could sort and filter by properties later.
+
+1:56:10 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I don't think you can.
+
+1:56:10 - Alexander Apfel (Horizons ABA)
+  You understand what I'm saying? Yep. Because these are called properties in Notion.
+
+1:56:15 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I don't think you can tag a property, can you? No, I don't think so. No, because the property is itself a tag.  If you look at it, right? Exactly.
+
+1:56:25 - Alexander Apfel (Horizons ABA)
+  You can't only tag a property this way, so we'll end up having 150 columns, and we'll just have to keep reorganizing them to start with the credentialing and authorization, then billing.  It's just that, then again, the hard part is you kind of have a similar problem to what you have on Monday, where you'd have to scroll all the way across to find what you need, right?  Mm-hmm. Yeah.
+
+1:56:48 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Hold on. So let's see. So then you have to scroll across. What if we do a different view? you.  Thank you. The list view isn't really good either, because that will just list out the payers, that doesn't list out the metrics, right?  That's the problem. Yeah, is not really gonna work. Is there a way to change the axis? Maybe you can change the axis, I don't know.
+
+1:57:16 - Alexander Apfel (Horizons ABA)
+  So for example, if one of the challenges is having too many columns, I think then Monday or AirTable would become a choice, because you can create views.  Like views is gonna be one sort of free barrier, yeah. You know what the problem with that is? That every time you add a column, it adds it to every existing view.  So have to go back to that view and remove that new column that you added in Monday. I hate that.  I hate that. Monday's column management is not good. I don't like it at all. And the searching isn't dynamic, it's not good.  I wouldn't do it. I wouldn't do it. So, yeah, AirTable could be one of the choices, because it handles that well, and then, yeah, I think we can just research on that.  yeah, more. Because I don't know if Notion, because if you look at the tables, I think the Monday and the Airtable are the ones like, know, or even like the Google Sheet, those are meant for like, you know, just the tables, like this is just one of the views in Notion.  So we obviously not going to have that much flexibility that we'll have in Monday or Airtable, yeah. But again, I don't like the idea of Monday, maybe Airtable, I don't like Monday for it, maybe Airtable's good.
+
+1:58:19 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  No, and then the question is, in theory, we could have four different databases, we could have for, you know, one for authorizations, one for credentialing, one for general, one for billing, we could do that.  And then maybe if it was a Notion or something else, we could have a link, you could have like a database that links each database, you click that database, and then you see it.  I don't know, or is the move? Yeah, I mean, the truth is, What are we trying to separate out?  are we thinking about? We're really just trying to tag it by what type it is. But there are a bunch of other tags that I can think of right now.  It's really just the type, the billing. And then you might want to filter by Medicaid payer type, filter by state, maybe Airtable works, maybe Notion works, probably Airtable over Notion, but maybe, I think you have a good understanding of what I'm looking for, maybe ask TrackPT or ask AI if we should be using an SQL database, like Mongo, I don't know, what do you think off of that?
+
+1:59:24 - Alexander Apfel (Horizons ABA)
+  So yeah, so to be honest, like we are just looking to have like a grouping system, right, where, you know, the column is like, column name, then maybe a B at the prefix, you know, because it's billing.  And then, you know, like, we are just looking for that, that, you we can say, obviously, I'm not saying we go that way, but it's just that we do that.  And then, but then I don't see that big of a reason to shift to something like SQL or all those things, because there is going to be a big discussions where, you know, I need to explain you how the SQL works and you need to explain  How the relationships are, and then, you know, just gets really complicated, so, yeah, um, I don't know, yeah, mm-hmm, I'm gonna ask, yeah, like, know, for the column, is there a way we can, or any software where columns can have its own properties, right, yeah,-hmm, no, and the other option, by the way, is we keep it simple, and we just create different databases for the different tags, if that's all we care about, all we care about is, right, we could do that, we could do that, um, we could do that, and then we could use Notion or Airtable, I would say, I don't like Monday, think Monday's not good for, for data, yeah, it's just something that, you know, if you just want to create views, then it's good, but then, yeah, yeah, I don't like it for that, so maybe Notion or Airtable could work, I have to see how Airtable works, Notion, it's good, because our whole team will have accesses, if you search it, it's a little easier to find information, um, let me think, okay, I have to think more about it, sure, yeah, yeah,  I'll also research on like if there is any other tool that solves this problem, yeah. Perfect. I'm trying to think anything else.  Yeah, it's going to be the state, payer, and I can start, I'll start building a list of the different things we're going to want to know, right?  Mm-hmm. And the second column will be what the category is, general billing, right? Building lists. Things we want to know.  Oh, and by the way, the big thing is that what I really want to do, this is where it gets cooler, is that I really would like to use AI, meaning when we start with, when we take on a new payer, most payers have like a behavioral health provider manual.  Okay.
+
+2:01:45 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Ideally, we would send that to AI, have AI extract that information, and automatically add it to the fields relative to that payer.  Mm-hmm. And then... And then maybe even say, these are the fields, these are the categories you already have, or the metrics you already have, the properties you already have in your database.
+
+2:02:03 - Alexander Apfel (Horizons ABA)
+  In this manual, we found that these additional properties that the guide kind of discusses, do you want to add these to the database?  And then that becomes another call, and then we try to find it to the other payers also, right? Right, yeah.
+
+2:02:16 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  We want to just have a massive database of everything we need to know for every payer. It's going to be so valuable when we grow.  Right, yeah. We're eventually going to have, right now we're working with like four or five payers, we're going eventually work with 60.  Yeah. So it gets complex, and we might have to even store that information for payers that we're not in network with.  Because let's say we're out of network, but we work with them still on a one-off basis, we need that information.
+
+2:02:38 - Alexander Apfel (Horizons ABA)
+  So it just, it's going to become a very valuable, important database.
+
+2:02:43 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Very valuable. And just because you said that, think the Airtable, again, like, you know, I'm just trying to think of the pros, right?  Because Airtable has built its own AI, where you can just say, hey, want to do this to the table, and it actually operates on the table, right?
+
+2:02:56 - Alexander Apfel (Horizons ABA)
+  It can do that, and you can upload this uploading file feature, and then it extract information, adding, it can do that, so, you know.  Cool. We're already using Airtable, so I don't mind using it more, I'm going get to pay for it, it's fine.  Yeah. Okay, perfect, fine. I think, I know that was a long conversation about it, but I think it's important, it's like really, you see how complex it is.  No, yeah, absolutely. Yeah, I think the next step is just going to be like researching on the tools, and if you, let's say, if we come down to like, you know, Notion and Airtable, we just start discussing on, because once I understood, then understand, you know, all these things as well.  Obviously, I get a lot of idea now, but then if I get more, then maybe I can come up with more suggestions of the tools and the ways we can store.  Yeah. Totally. Great, great, great. Okay, let's keep going. Let's go back to the authorization forms. Yes. Okay, let me show Yeah, so we were, yeah.  Okay, so the agency information, we did the fax number, you sent me that. By the way. Just thinking quickly, would be great, especially in the beginning when we're playing around with these forms, if you can make it in a way that it could be edited by somebody.  Like, let's say you send the draft, either they edit it via Google Doc and then convert it, and maybe you create Google Apps Script for conversion, I don't know, you'll figure that out.  Or, like we talked about before, where they can submit a form to make changes, but there should definitely be an option where, when the form comes in, we can edit it to make corrections.  Got it.
+
+2:04:25 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, it's good that we are maintaining the Google Doc version, so editing is easier for anyone else. Another thing, because more and more, is once you fill it out for one client, Brittany was saying on the call, they don't mind doing the manual filling out, because once you fill it out once, you use that same form for next request.  So for the initial assessment, you fill it out, and for the treatment off, you use the same form with the fill out information, you just change the request in terms of how many hours and which codes to request.  … … … … So there should be a way, it's up to you, meaning there's two ways to go about it, either every time we do a request, initial, treatment, ongoing, you do a new automatic filling out of the form, or you save the last form and you just clear the fields that need to be filled out now, you understand?
+
+2:05:17 - Alexander Apfel (Horizons ABA)
+  Yeah, I'm thinking. And both options work, it's a question of which is more consistent and which is easier, both are fine.  Like if it's easier just to do a new one every time, that's okay also. Yeah. Yeah, I'm just thinking that the information that we have in the previous form that was submitted is like really, really information.  Like, you know, every time we try to fill it in from the Monday data, it's going to be treatment plan, Monday.com, all those things.  But then we already have that data extracted, right, in the previous one. So we can at least, I'm not, we, obviously the goal is, I think we'll have to like, you know, recreate a new form.  But when we create a new form data, we pool might not be. Okay, you'll figure that out. Whichever is easier for you in the back end.  Okay, so agency information we talked about. Are you a network with your local blue plan? That's, by the way, you a network with your local blue plan?  It's going to depend. Like Anthem BCPS, right now we're only going to use this in Colorado and we are not in network.
+
+2:06:22 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So it's going to be no. Okay, got it.
+
+2:06:24 - Alexander Apfel (Horizons ABA)
+  So you might need to tell me, hey, that you need to set up for every insurance carrier, are we in network or not?  Because you see it asks on all these forms, are we in network or not? And I mentioned that because different forms will be used for across states.  Meaning Anthem BCPS is an insurance company in let's say like 10 states. So certain states we might be in network and certain states we might not be.  Okay. We have to, I think I need to add, so I'll show you where I have that. So let's say here, let me.  is Three. Four. No Two. Four. So you see I have insurance carriers, and I do it by each carrier and state has its own carrier, so even though AnthemBCBS is good in five states, I'm going to have a separate one for AnthemBCBS in Colorado, does that make sense?  Got it, yeah. So let's say here, hold on let's see. So I think, by the way, this pulls, remember this pulls into the client board, and that pulls into the authorizations dashboard.  Do you remember that it pulls here? Yep. Over here? So I think I need to add a column here for network status.  So Just do this, edit labels. It's so good to go through this with you. It makes me think of so many more things.
+
+2:08:04 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, yeah, totally. Okay, so...
+
+2:08:28 - Alexander Apfel (Horizons ABA)
+  I think we're in that work with half. I'm not sure, to be honest. I have to check. Okay. And then...  Yeah, okay. Okay, perfect, yeah. So you tell me if you need that in the authorizations dashboard, I could do this, I could add it, right?  you can fill it.
+
+2:09:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  I can't do a mirror, because the mirror, I think mirrors from the client board. Let me see.
+
+2:09:37 - Alexander Apfel (Horizons ABA)
+  It's fine if you even can't, because there is a link field available, so we can pull that information from the other board.
+
+2:09:44 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Perfect, that's even better, that's even better.
+
+2:09:45 - Alexander Apfel (Horizons ABA)
+  Okay, fine. that's gonna help. Okay, let's go back to the form. So now that'll help, because every state, every payer is gonna be different, right?  And again, we're gonna have to, we'll obviously set up. So it's like, let's say, an insurance carrier's board. Either on your end or on Monday, we'll have, okay, these insurances, these are the forms that you use, right?  Yeah, exactly. Yep. And all the information we have in there in the, so yeah, it's just going to be, yep.  Exactly. This is a smart way to do it, right? I mean, it's, yeah, I think, no, absolutely. And I think what we'll do is obviously when we put the placeholders as well, so obviously what we do is we have like a placeholder for every field that we want to fill.  So we'll also name it by, you know, where this information is going to come from. So whenever we look at the doc, I don't need to log in, like, remember, oh, this information was coming from me at all.  Correct. So yeah, we, yep. Okay. Contact, person name, same thing. We'll put my name, phone, we'll do the company phone number, 888-923-824-A, and email, we'll do authorizations at HorizonsABA.com.  Yep.
+
+2:10:44 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Well, name, so this is ECB.
+
+2:10:47 - Alexander Apfel (Horizons ABA)
+  Oh, same thing. For the initial request auth, we'll have a placeholder, the initial auth, then for treatment and ongoing treatment, we'll already have a supervising VCBA.  And then it pull from the supervising BCBA, which is in the authorizations dashboard. Right. Yep. Okay. Yeah. Their TD, their MPI, their tax ID.  Ooh, that's interesting. One second. Yeah. I guess you need their individual tax ID. Can you check the Fathoms, see if I ask Brittany, is this the BCBA or do we put our group information again?  The Horizons ABA Colorado. I'm not sure. Usually they don't ask for a tax ID for a BCBA. We have to ask for which one we do.  then we'll, based on that, we'll figure out who you are. If we just do the repeat of the agency information or we do the BCBA.  Yeah. Okay.
+
+2:11:43 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Got it. Yeah. So yeah, I'll just, you know, go through the loop, uh, patterns one more time.
+
+2:11:47 - Alexander Apfel (Horizons ABA)
+  No, I can just ask, I can just ask Brittany, what were those two questions? Let me ask, let me write them down.  Um, let me write them down so it'd be easier. There's no reason for to through the Fathom, it's waste of time.  Brittany, questions? Okay. Edna, Edna, form? We wanted to know, do we need to know if a member is receiving additional therapy services?  Was there anything? What was the other one? Oh, yeah. Hold on.
+
+2:12:26 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Step four, do we need to check these boxes, or can we leave blank? How do you usually fill this out?
+
+2:12:38 - Alexander Apfel (Horizons ABA)
+  Okay, good.
+
+2:12:39 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Now, and the BCBS form? Yeah. So, in that, I think it's the TID for the BCBA, yeah. Oh, yeah.
+
+2:12:48 - Alexander Apfel (Horizons ABA)
+  So, give me a second. GCBA for rendering slider. We put our agency info here, or the PCBA's info, if the PCBA, then we need to enter their PID, okay, that's it, I have three questions so far, let's keep going.  Okay, so contact phone, yeah, yeah, perfect, yeah, I don't know if we need to do anything here. So here they're asking for units, you see, not ours.  Yep, yep, so we'll just do the conversion, and again, like, you know, as you mentioned for the course, like, if it's 151, it's for the initial one, and then, you know, all those, so yeah.  Okay, again, weekly, and by the way, usually, when you ask for 97151, it's a one time for auth, so That one, you see how they manually put in We're off.  The other ones, could decide if we want to enter it as weekly or hourly, weekly or monthly, or per auth period.  Does that make sense? These two, right? No, 97151, it's one time per auth period. So let's say you ask for total units, want 8 hours, let's say you want 12 hours, basically 12 times 4 is 48 units, okay?  But then let's say 5-3. So they're asking for total units, and they give you the option of how to request the timeframe.  So let's say we say we want to ask for it weekly, so you write weekly in there, you type in weekly, and we'll keep it the same, right?  Let's say weekly, and let's say we ask for 40 hours a week, it's 40 times 4, it's 160 units a week.  If we asked for monthly, it'd be 40 times 4 times 4, it be 640 units per month. If we ask for auth period, it would be 160 per week, right?
+
+2:14:47 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Multiplot by 26 weeks in the auth period, it'd be 4,160 units per auth period. Got it? Got it? The easiest thing is just to do it properly.  That's easy. Yeah. It's easy. Yep. Fine. Let's keep going.
+
+2:15:01 - Alexander Apfel (Horizons ABA)
+  Provider name. Oh, man. Provider name. Print. License information.
+
+2:15:10 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Okay. I need to ask her again. For Tramp and BCBS form, the end of it has fields for provider name, print, license info, signature.  Date.
+
+2:15:29 - Alexander Apfel (Horizons ABA)
+  Yeah. Date is fine. What do you put in there? Do you just do an admin team member and leave license blank?  Or does it need to be a PCA? Okay. Let's keep going.
+
+2:15:48 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yep. Yeah. I just noticed like these have these buttons kind of a thing. Again.
+
+2:15:53 - Alexander Apfel (Horizons ABA)
+  It's going to be a bit bad.
+
+2:15:55 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Bye. Hello. Thank
+
+2:15:56 - Alexander Apfel (Horizons ABA)
+  When we convert from PDF, how to manage that, let's see. I don't think you need that button. I think that's just like a PDF button to make it easier for people to save and reset, but I think you don't need those buttons, right?  I don't think you need them. Yeah, I mean, obviously when you submit it, they're going to be of no use, but if it's there in the PDF, I don't know if that's required or not.  I feel like if you don't keep it on there, be fine. I'm not worried about it. Yeah. Okay.
+
+2:16:21 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Awesome. Yeah. then there is scale first.
+
+2:16:26 - Alexander Apfel (Horizons ABA)
+  again, member name, member ID, date of birth, same things, requested details. one second, second. Give me one second. Yep.  Okay. Yep. Let's keep going. So the member information, again, the same thing, name ID, date of birth, requester is going to be Horizons, phone number, fax number, email date.  Yeah. Rendering provider. So again, I think that's going to be hopefully the group. Yeah, we'll do like Rydon, ABA, MD, LLC.  That's for that one. Group facility, MPI, tax ID, rendering BC.
+
+2:17:06 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Oh, so then we need the rendering BCBI, MPI, and tax ID. So again, same thing. Character form. In rendering provider section, they ask for rendering BCBA, MPI, number, and tax ID.  Yep. Do we need to give the BCBA's SSN? Okay. Next, address. Okay. That'll be the address of our office.  Yes. To press details, you're going to usually do home. It's almost always going to be home and other. Just home and other.  Okay. I would do home other and office. That's what would do. Just do a home other and office for now, all of us.  Hold on one second. I'm getting a call. Hold on. Good. Yep. Doc. I need five minutes, that okay? Yeah, let's practice.  Thank
+
+2:22:01 - Alexander Apfel (Horizons ABA)
+  Thank you. Sorry, Abhijeet, back. No worries. Yep, that's fine. Okay. Awesome. So yeah, so we're going to do home or the other and then...  Home, office, and other.
+
+2:22:46 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Date range requested. date range requested. I have to ask Brittany for character first.
+
+2:22:55 - Alexander Apfel (Horizons ABA)
+  much. Thank Thank So basically, for the initial auth, you're going to start with the date that it's being filled out, the form.  And then I'm asking Brittany, do I ask for three months, months or six months for the treatment off and the ongoing treatment off you're going to get that information from the treatment line right yeah okay okay and then the code number of units you see that and then it's it doesn't say it doesn't say that's the end of form right it doesn't say to the weekly or hourly right yeah  Okay. Perfect. Next. Yep. Okay. And I think we are on to the last one. So this one is for Evernote Cigna.  Okay, so yeah. So, okay, so they have like- This is last one? There should be another one for United Behavioral Health.  I have to ask. Okay. It's fine. Okay. Yeah. Yeah. So type of request. I think this is the So initial, continued stay, additional reconsideration.  Initial or continued stay. I I don't know. What about the treatment office?
+
+2:24:35 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Is that continued stay? Mm-hmm.-hmm. Mm-hmm. Mm-hmm. Mm-hmm. Mm-hmm. Mm-hmm.
+
+2:24:51 - Alexander Apfel (Horizons ABA)
+  You Okay, next. Requested start date, same idea, it's going to depend if it's the initial, just that day, if it's the ongoing, it's going to be the date of the treatment plan, the day of the treatment plan.  Services being requested, so you see that, you see the code, hours requested per month, so that one you have to do hours requested, and they filled out already per month, so I guess I would just do per month.  Per month, yeah. Right, yeah. Then we go here, the BCBA, think, how many hours are being used for direct treatment of the patient?  So we, what we pull here would go in here, right? And then we'll just do month. One second, on the Evernorth, you know what, I like, I don't like month.  the process. We've the pre pre. Here, can I tell you the problem of month? Here's the issue of month.  Here's the issue of month. And you see that they filled in per month. Brickman's team must have done that.  You could delete that, get rid of that from the Googlebot. It says week or month. Week or month. Week or week is much better.  How many weeks are there in a month? Four, right? How many weeks are there in a six month period?  No, it differs. Yeah. I mean, there is five sometimes. 26. It's 26 weeks in six months. So if you do it, if you take the per month number by taking weeks times four, so then you're shorting yourself by two out of the 26 weeks.  You understand? Right. No, I agree. A week is better because then they multiply per week by 26, not by 24.  24. Yeah. Yeah. Okay. Next assessment that you know. Okay. Perfect. Keep going. So the patient information, patient name, date of birth.  Oh, if PCBA such for hours would be requested. Just ignore number four, leave number four blank. Patient information, you have all that information, good.  Clinics, same thing, you know that's us, okay? So that's going to be the name of BCBA, the BCBA, if they're a BCBA and LBA.
+
+2:27:13 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  So we'll need, we probably need to get more clear on, we need to look at our Monday board for the BCBAs and check off if they're also an LBA.  LBA just means that they're licensed in that state.
+
+2:27:24 - Alexander Apfel (Horizons ABA)
+  Ah, okay. Any state. Okay, other please specify. We'll see if we're about to be super on the page, entire treatment.  Good question. I would just write yes. Okay. Oh, yeah, I'll just do yes for now. Okay, we'll have to request it later.  Let's see, do we need to... You have to. I love you. Fathom, Abhijeet abhijeetgandhi02. Yeah, mean, this is hard work, getting this all done and getting it done right, but I think once we get it done right for each payer, once you get it done right across the board, each payer, we add two repairs on, we'll do a call like this, it'll take 45 minutes, we'll walk through it.  I just think you might be able to learn on your own. You'll know how to fill them out because you're learning.  Yeah, there's so much data, right? Like unique data, it's gonna disappear after we do like 10 pairs, let's say, right?  Exactly. And I think long term, being able to do this is just gonna make it a lot easier for our team, I think.  I think it's a lot of work on the front end, but I think in the long run it's worth it.  That's my opinion. Yeah. Okay, contact, so places where service will rendered, we're gonna do home, community, and telehealth. Okay.  Yeah, and then contact information, same thing, my name, company number, company fax number, authorization.abhijeetgandhi.com, name of conquestions or if requests cannot be approved, so we'll have to give you, you'll have to remind me, I'll need to give you, for each state, I'll give you a BCBA to put in there.  Okay. It might be the same as a placeholder BCBA, we'll figure that out. Oh, so no, I actually think, yeah, we'll give you a placeholder BCBA, we'll figure that out.  Okay. Diagnosis, patient diagnosed with autism, yes, to provide the most date of the most current diagnosis, evaluation, evaluator's name, that's why, again, now you see all.  the automations we've already built, extracting data from the ASD report, is very important, right? Yep, yep, I agree. For ongoing care requests, have there been any breaks in treatment?  Just say no, okay, list of standardized assessments. Oh, that's tough. Hold on. This was just EverNorth Cigna. Mm-hmm. Blank and simply write, please refer to the treatment plan to see the assessments completed.  You're All So there are different assessments that the BCBAs will do to test the child. So one's called VVMAC, another one's called Vineland, there's all these different, there's 20 different types.  So I'm going to ask her, can we just write, please see treatment plan, or do we have to list them out?  If we have to list them out, then what we might need to do is when a BCBA completes an assessment, we may need to, and this is only for the treatment plan request and ongoing treatment off request, not for the initial, because we haven't done the assessment yet, right?  We might need to, when they finish your treatment plan, if it's for a Cigna client, shoot them an email asking for a list of the assessments they've completed to get that information.  Right, yeah, and like, do they have like any assessment report or anything from where we can extract that data, like do they write in there?  If have plan, but you'd have to be able to figure out which type it was, I don't think it's a good idea.  I mean, I have to look, you know what, take the treatment plan template that we gave, that you have, run it in TractoVT, ask them, does it list out anywhere which, which assessments...  Maybe it's in the treatment plan. don't know. might be. The results from the assessments are in the treatment plan.  I just don't know if the treatment plan requires them to enter a list of the assessments completed and the dates.  Is this relevant for more than just one payer? We could always add that section in the treatment plan so they have to put it in.  Let me know. Check it out and let me know. Okay, so this is usually going to be no. Right now, just do no.  Okay. This means are we trying to say you should, even for out-of-network, treat them as if they're in networks.  Right now, just do no, or we'll call you later if we want to change that.
+
+2:32:37 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  And again, the I see it, as we go and as we grow, we might do setups where for specific forms, if there are specific things that are specific to that payer, we might do, okay, when you submit, click, you know, set up treatment off, a form would go to one of our, let's say our authorizations email, it'll say, bye!
+
+2:32:55 - Alexander Apfel (Horizons ABA)
+  see you then. You requested a treatment off for this client who has Cigna.
+
+2:33:00 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Please fill out this form to provide this specific information for this client. And then you'll put fields in where Chris, whoever's managing authorizations, will enter that information to then fill out this form.
+
+2:33:10 - Alexander Apfel (Horizons ABA)
+  Does that make sense?
+
+2:33:11 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  Yeah, yeah. I see.
+
+2:33:14 - Alexander Apfel (Horizons ABA)
+  For right now, I'm hoping we don't need that.
+
+2:33:15 - Abhijeet Gandhi (abhijeetgandhi02@gmail.com)
+  But if it gets complex like that, where we need to make changes to individual forms that are not being pulled from Monday of the treatment plan and that need to be manually made, and rather than manually changing the form, I'd rather you just create a form, like a Monday, you know, whatever form you use and send that information.  Yeah, something like the one that we have for the interview form, right? Exactly. Yeah. Okay, let's keep going. So now they're going back to negation.  And then we fill out if we're asking for an acceptor. If you say no, you don't have to fill that out.  Oh, okay. Got it. And yeah, that's all. Yep. Okay. Okay. Okay. Great stuff. Great stuff. Have we done? We're done, right?  Yeah. Those were the other PDF that we have in the chat. It's great. Yeah. But yeah, I think we covered a lot.  I think this authorization call was really important for, you know, and I'll just, yeah. Perfect. Awesome. Okay. Thank you, Abhijeet.  Have a great night. You too. Bye-bye.
