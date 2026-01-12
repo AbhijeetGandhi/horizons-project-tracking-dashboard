@@ -56,6 +56,15 @@ function isMaintenance(task: ClickUpTask): boolean {
 }
 
 /**
+ * Check if a task is completed
+ */
+function isCompleted(task: ClickUpTask): boolean {
+  const status = task.status.status.toLowerCase();
+  const type = task.status.type?.toLowerCase();
+  return status === 'complete' || type === 'closed' || type === 'done';
+}
+
+/**
  * Extract project name from task - tries to match with known projects
  * or extracts from task name pattern
  */
@@ -93,6 +102,7 @@ function extractDateRange(sprintName: string): string {
 
 /**
  * Process sprint tasks into SprintData
+ * Only includes tasks with "complete" status
  */
 function processSprintTasks(
   sprintId: string,
@@ -100,7 +110,10 @@ function processSprintTasks(
   tasks: ClickUpTask[],
   knownProjects: string[]
 ): SprintData {
-  const sprintTasks: SprintTask[] = tasks.map(task => {
+  // Filter for completed tasks only
+  const completedTasks = tasks.filter(task => isCompleted(task));
+
+  const sprintTasks: SprintTask[] = completedTasks.map(task => {
     const hoursSpent = msToHours(task.time_spent);
     return {
       id: task.id,
