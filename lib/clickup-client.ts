@@ -30,6 +30,12 @@ export interface ClickUpList {
   }>;
 }
 
+export interface ClickUpTag {
+  name: string;
+  tag_fg: string;
+  tag_bg: string;
+}
+
 export interface ClickUpTask {
   id: string;
   name: string;
@@ -44,6 +50,7 @@ export interface ClickUpTask {
     id: string;
     name: string;
   };
+  tags?: ClickUpTag[];
   custom_fields?: Array<{
     id: string;
     name: string;
