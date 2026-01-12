@@ -36,6 +36,11 @@ export interface ClickUpTag {
   tag_bg: string;
 }
 
+export interface ClickUpTaskLocation {
+  id: string;
+  name: string;
+}
+
 export interface ClickUpTask {
   id: string;
   name: string;
@@ -50,6 +55,7 @@ export interface ClickUpTask {
     id: string;
     name: string;
   };
+  locations?: ClickUpTaskLocation[]; // Additional lists this task is added to
   tags?: ClickUpTag[];
   custom_fields?: Array<{
     id: string;
@@ -59,12 +65,25 @@ export interface ClickUpTask {
   }>;
 }
 
+export interface TimeEntryInterval {
+  id: string;
+  start: string;
+  end: string;
+  time: string; // milliseconds as string
+}
+
+export interface TimeEntryRaw {
+  user: {
+    id: number;
+    username: string;
+  };
+  time: number; // total milliseconds
+  intervals: TimeEntryInterval[];
+}
+
+// Flattened time entry for easier processing
 export interface TimeEntry {
   id: string;
-  task: {
-    id: string;
-    name: string;
-  };
   duration: number; // milliseconds
   start: string;
   end: string | null;
@@ -148,12 +167,31 @@ export class ClickUpClient {
 
   /**
    * Get time entries for a specific task
+   * Flattens the intervals from the raw API response
    */
   async getTimeEntriesForTask(taskId: string): Promise<TimeEntry[]> {
-    const response = await this.request<{ data: TimeEntry[] }>(
+    const response = await this.request<{ data: TimeEntryRaw[] }>(
       `/task/${taskId}/time`
     );
-    return response.data || [];
+
+    // Flatten intervals from each user's time entries
+    const entries: TimeEntry[] = [];
+    for (const rawEntry of response.data || []) {
+      for (const interval of rawEntry.intervals || []) {
+        entries.push({
+          id: interval.id,
+          duration: parseInt(interval.time),
+          start: interval.start,
+          end: interval.end,
+          user: {
+            id: String(rawEntry.user.id),
+            username: rawEntry.user.username,
+          },
+        });
+      }
+    }
+
+    return entries;
   }
 
   /**
@@ -167,6 +205,38 @@ export class ClickUpClient {
       `/team/${this.config.teamId}/time_entries?start_date=${startDate}&end_date=${endDate}`
     );
     return response.data || [];
+  }
+
+  /**
+   * Get tasks from a folder that are linked to a specific list via locations
+   * This handles the case where tasks from Projects are added to Sprint lists
+   */
+  async getTasksLinkedToList(folderId: string, targetListId: string): Promise<ClickUpTask[]> {
+    // Get all lists in the folder
+    const lists = await this.getListsInFolder(folderId);
+
+    // Fetch tasks from all lists in parallel
+    const taskPromises = lists.map(list => this.getAllTasksInList(list.id));
+    const taskArrays = await Promise.all(taskPromises);
+
+    // Flatten and filter for tasks that have the target list in their locations
+    const linkedTasks: ClickUpTask[] = [];
+    for (const tasks of taskArrays) {
+      for (const task of tasks) {
+        if (task.locations && task.locations.some(loc => loc.id === targetListId)) {
+          linkedTasks.push(task);
+        }
+      }
+    }
+
+    return linkedTasks;
+  }
+
+  /**
+   * Get the projects folder ID from config
+   */
+  getProjectsFolderId(): string {
+    return this.config.projectsFolderId;
   }
 }
 

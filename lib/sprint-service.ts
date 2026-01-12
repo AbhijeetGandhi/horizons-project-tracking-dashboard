@@ -3,7 +3,7 @@
  * Fetches and aggregates sprint data for development vs maintenance analysis
  */
 
-import { ClickUpClient, ClickUpTask } from './clickup-client';
+import { ClickUpClient, ClickUpTask, TimeEntry } from './clickup-client';
 
 export interface SprintTask {
   id: string;
@@ -65,10 +65,51 @@ function isCompleted(task: ClickUpTask): boolean {
 }
 
 /**
- * Extract project name from task - tries to match with known projects
- * or extracts from task name pattern
+ * Check if a task has any time logged
+ */
+function hasTimeLogged(task: ClickUpTask): boolean {
+  return (task.time_spent || 0) > 0;
+}
+
+/**
+ * Check if a task should be included in sprint analytics
+ * Only completed and in-progress tasks are included
+ */
+function shouldIncludeTask(task: ClickUpTask): boolean {
+  const status = task.status.status.toLowerCase();
+  return isCompleted(task) || status === 'in progress';
+}
+
+/**
+ * Extract project name from task - checks task locations (for tasks added to projects),
+ * primary list, and task name patterns
  */
 function extractProjectName(task: ClickUpTask, knownProjects: string[]): string | null {
+  // First, check if the task has locations (additional lists it's added to)
+  // This handles tasks created in sprints and added to project lists
+  if (task.locations && task.locations.length > 0) {
+    for (const location of task.locations) {
+      const matchedFromLocation = knownProjects.find(p =>
+        p.toLowerCase() === location.name.toLowerCase() ||
+        location.name.toLowerCase().includes(p.toLowerCase()) ||
+        p.toLowerCase().includes(location.name.toLowerCase())
+      );
+      if (matchedFromLocation) return matchedFromLocation;
+    }
+  }
+
+  // Next, check if the task's primary list matches a known project
+  // This handles tasks that are linked from the Projects folder
+  if (task.list?.name) {
+    const listName = task.list.name;
+    const matchedFromList = knownProjects.find(p =>
+      p.toLowerCase() === listName.toLowerCase() ||
+      listName.toLowerCase().includes(p.toLowerCase()) ||
+      p.toLowerCase().includes(listName.toLowerCase())
+    );
+    if (matchedFromList) return matchedFromList;
+  }
+
   // Check task name for project patterns like "ProjectName: Task" or "ProjectName - Task"
   const colonMatch = task.name.match(/^([^:]+):/);
   if (colonMatch) {
@@ -101,28 +142,111 @@ function extractDateRange(sprintName: string): string {
 }
 
 /**
+ * Parse sprint date range into start and end timestamps
+ * Returns null if parsing fails
+ */
+function parseSprintDateRange(sprintName: string): { start: number; end: number } | null {
+  const dateRange = extractDateRange(sprintName);
+  if (!dateRange) return null;
+
+  // Pattern: "12/29 - 1/11"
+  const match = dateRange.match(/(\d{1,2})\/(\d{1,2})\s*-\s*(\d{1,2})\/(\d{1,2})/);
+  if (!match) return null;
+
+  const [, startMonth, startDay, endMonth, endDay] = match;
+
+  // Determine the year - assume current year, handle year boundary
+  const now = new Date();
+  let startYear = now.getFullYear();
+  let endYear = now.getFullYear();
+
+  // If end month < start month, end is in next year
+  if (parseInt(endMonth) < parseInt(startMonth)) {
+    endYear = startYear + 1;
+  }
+
+  // If start month is much larger than current month, it's from last year
+  if (parseInt(startMonth) > now.getMonth() + 3) {
+    startYear = startYear - 1;
+    if (parseInt(endMonth) < parseInt(startMonth)) {
+      endYear = startYear + 1;
+    } else {
+      endYear = startYear;
+    }
+  }
+
+  // Create dates at start of day (local time) and end of day (local time)
+  // Add buffer to end to ensure we capture all time entries on the last day
+  const startDate = new Date(startYear, parseInt(startMonth) - 1, parseInt(startDay), 0, 0, 0, 0);
+  const endDate = new Date(endYear, parseInt(endMonth) - 1, parseInt(endDay), 23, 59, 59, 999);
+
+  return { start: startDate.getTime(), end: endDate.getTime() };
+}
+
+/**
+ * Calculate hours from time entries within a date range
+ */
+function getHoursInRange(timeEntries: TimeEntry[], start: number, end: number): number {
+  let totalMs = 0;
+  for (const entry of timeEntries) {
+    const entryStart = parseInt(entry.start);
+    if (entryStart >= start && entryStart <= end) {
+      totalMs += entry.duration;
+    }
+  }
+  return totalMs / 1000 / 60 / 60;
+}
+
+/**
  * Process sprint tasks into SprintData
- * Only includes tasks with "complete" status
+ * Includes completed tasks and in-progress tasks
+ * For in-progress tasks, only counts time logged during the sprint period
  */
 function processSprintTasks(
   sprintId: string,
   sprintName: string,
   tasks: ClickUpTask[],
-  knownProjects: string[]
+  knownProjects: string[],
+  taskTimeEntries: Map<string, TimeEntry[]>
 ): SprintData {
-  // Filter for completed tasks only
-  const completedTasks = tasks.filter(task => isCompleted(task));
+  // Filter for completed and in-progress tasks
+  const includedTasks = tasks.filter(task => shouldIncludeTask(task));
 
-  const sprintTasks: SprintTask[] = completedTasks.map(task => {
-    const hoursSpent = msToHours(task.time_spent);
-    return {
-      id: task.id,
-      name: task.name,
-      hoursSpent,
-      isMaintenance: isMaintenance(task),
-      projectName: extractProjectName(task, knownProjects),
-    };
-  });
+  // Parse sprint date range for filtering in-progress task time
+  const sprintRange = parseSprintDateRange(sprintName);
+
+  const sprintTasks: SprintTask[] = [];
+
+  for (const task of includedTasks) {
+    let hoursSpent: number;
+
+    if (isCompleted(task)) {
+      // For completed tasks, use the task's total time_spent
+      hoursSpent = msToHours(task.time_spent);
+    } else {
+      // For in-progress tasks, filter time entries by sprint date range
+      const timeEntries = taskTimeEntries.get(task.id) || [];
+      if (sprintRange && timeEntries.length > 0) {
+        hoursSpent = getHoursInRange(timeEntries, sprintRange.start, sprintRange.end);
+      } else if (timeEntries.length > 0) {
+        // If no sprint range, use total from time entries
+        hoursSpent = timeEntries.reduce((sum, e) => sum + e.duration, 0) / 1000 / 60 / 60;
+      } else {
+        // Fallback to task's time_spent
+        hoursSpent = msToHours(task.time_spent);
+      }
+    }
+
+    if (hoursSpent > 0) {
+      sprintTasks.push({
+        id: task.id,
+        name: task.name,
+        hoursSpent,
+        isMaintenance: isMaintenance(task),
+        projectName: extractProjectName(task, knownProjects),
+      });
+    }
+  }
 
   const totalHours = sprintTasks.reduce((sum, t) => sum + t.hoursSpent, 0);
   const maintenanceHours = sprintTasks
@@ -143,6 +267,7 @@ function processSprintTasks(
 
 /**
  * Get all sprint data from the Sprint Folder
+ * Also fetches tasks from Projects folder that are linked to each sprint
  */
 export async function getSprintData(
   client: ClickUpClient,
@@ -152,10 +277,76 @@ export async function getSprintData(
   // Get all sprint lists
   const sprintLists = await client.getListsInFolder(sprintFolderId);
 
-  // Fetch tasks for all sprints in parallel
+  // Get the projects folder ID to find linked tasks
+  const projectsFolderId = client.getProjectsFolderId();
+
+  // Pre-fetch ALL tasks from Projects folder ONCE to avoid rate limits
+  // Then filter locally for each sprint
+  let allProjectTasks: ClickUpTask[] = [];
+  if (projectsFolderId) {
+    const projectLists = await client.getListsInFolder(projectsFolderId);
+    const projectTaskPromises = projectLists.map(list => client.getAllTasksInList(list.id));
+    const projectTaskArrays = await Promise.all(projectTaskPromises);
+    allProjectTasks = projectTaskArrays.flat();
+  }
+
+  // Create a map of sprint list ID -> linked tasks from projects
+  const sprintLinkedTasksMap = new Map<string, ClickUpTask[]>();
+  for (const task of allProjectTasks) {
+    if (task.locations) {
+      for (const loc of task.locations) {
+        const existing = sprintLinkedTasksMap.get(loc.id) || [];
+        existing.push(task);
+        sprintLinkedTasksMap.set(loc.id, existing);
+      }
+    }
+  }
+
+  // Fetch direct tasks for all sprints in parallel
   const sprintDataPromises = sprintLists.map(async (sprint) => {
-    const tasks = await client.getAllTasksInList(sprint.id);
-    return processSprintTasks(sprint.id, sprint.name, tasks, knownProjects);
+    // Get tasks directly in the sprint list
+    const directTasks = await client.getAllTasksInList(sprint.id);
+
+    // Get linked tasks from pre-fetched project tasks
+    const linkedTasks = sprintLinkedTasksMap.get(sprint.id) || [];
+
+    // Combine and deduplicate tasks (by ID)
+    const taskMap = new Map<string, ClickUpTask>();
+    for (const task of directTasks) {
+      taskMap.set(task.id, task);
+    }
+    for (const task of linkedTasks) {
+      if (!taskMap.has(task.id)) {
+        taskMap.set(task.id, task);
+      }
+    }
+
+    const allTasks = Array.from(taskMap.values());
+
+    // For in-progress tasks, fetch their time entries to filter by sprint date
+    const inProgressTasks = allTasks.filter(t =>
+      t.status.status.toLowerCase() === 'in progress'
+    );
+
+    // Fetch time entries for in-progress tasks (in parallel)
+    const taskTimeEntries = new Map<string, TimeEntry[]>();
+    if (inProgressTasks.length > 0) {
+      const timeEntryPromises = inProgressTasks.map(async (task) => {
+        try {
+          const entries = await client.getTimeEntriesForTask(task.id);
+          return { taskId: task.id, entries };
+        } catch {
+          return { taskId: task.id, entries: [] };
+        }
+      });
+
+      const timeEntryResults = await Promise.all(timeEntryPromises);
+      for (const result of timeEntryResults) {
+        taskTimeEntries.set(result.taskId, result.entries);
+      }
+    }
+
+    return processSprintTasks(sprint.id, sprint.name, allTasks, knownProjects, taskTimeEntries);
   });
 
   const sprints = await Promise.all(sprintDataPromises);

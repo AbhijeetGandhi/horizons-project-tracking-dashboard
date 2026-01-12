@@ -2,12 +2,10 @@ import { createClickUpClient } from '@/lib/clickup-client';
 import { getSprintData } from '@/lib/sprint-service';
 import { getProjectMetrics } from '@/lib/project-service';
 import { SprintCharts } from '@/components/SprintCharts';
+import { RefreshButton } from '@/components/RefreshButton';
 import Link from 'next/link';
 
 export const revalidate = 60; // Revalidate every 60 seconds
-
-// Sprint folder ID for Horizons ABA
-const SPRINT_FOLDER_ID = '90166142809';
 
 export default async function AnalyticsPage() {
   let sprintSummary;
@@ -16,13 +14,18 @@ export default async function AnalyticsPage() {
   try {
     const client = createClickUpClient();
     const folderId = process.env.CLICKUP_PROJECTS_FOLDER_ID || '';
+    const sprintFolderId = process.env.CLICKUP_SPRINT_FOLDER_ID || '';
+
+    if (!sprintFolderId) {
+      throw new Error('CLICKUP_SPRINT_FOLDER_ID is not set');
+    }
 
     // Get known project names from the Projects folder
     const projectMetrics = await getProjectMetrics(client, folderId);
     const knownProjects = projectMetrics.map(p => p.name);
 
     // Get sprint data
-    sprintSummary = await getSprintData(client, SPRINT_FOLDER_ID, knownProjects);
+    sprintSummary = await getSprintData(client, sprintFolderId, knownProjects);
   } catch (e) {
     error = e instanceof Error ? e.message : 'Unknown error occurred';
     console.error('Error fetching analytics data:', e);
@@ -86,12 +89,17 @@ export default async function AnalyticsPage() {
             </svg>
             Back to Dashboard
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Weekly Analytics
-          </h1>
-          <p className="text-gray-600 dark:text-gray-400">
-            Development vs Maintenance time breakdown across all sprints
-          </p>
+          <div className="flex justify-between items-start">
+            <div>
+              <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+                Weekly Analytics
+              </h1>
+              <p className="text-gray-600 dark:text-gray-400">
+                Development vs Maintenance time breakdown across all sprints
+              </p>
+            </div>
+            <RefreshButton />
+          </div>
         </div>
 
         {/* Summary Cards */}
