@@ -6,7 +6,7 @@ import { SprintDetailsTable } from '@/components/SprintDetailsTable';
 import { RefreshButton } from '@/components/RefreshButton';
 import Link from 'next/link';
 
-export const revalidate = 60; // Revalidate every 60 seconds
+export const dynamic = 'force-dynamic'; // Disable caching, always fetch fresh data
 
 export default async function AnalyticsPage() {
   let sprintSummary;
