@@ -65,13 +65,6 @@ function isCompleted(task: ClickUpTask): boolean {
 }
 
 /**
- * Check if a task has any time logged
- */
-function hasTimeLogged(task: ClickUpTask): boolean {
-  return (task.time_spent || 0) > 0;
-}
-
-/**
  * Check if a task should be included in sprint analytics
  * Only completed and in-progress tasks are included
  */
@@ -82,9 +75,13 @@ function shouldIncludeTask(task: ClickUpTask): boolean {
 
 /**
  * Extract project name from task - checks task locations (for tasks added to projects),
- * primary list, and task name patterns
+ * parent task locations (for subtasks), primary list, and task name patterns
  */
-function extractProjectName(task: ClickUpTask, knownProjects: string[]): string | null {
+function extractProjectName(
+  task: ClickUpTask,
+  knownProjects: string[],
+  taskMap?: Map<string, ClickUpTask>
+): string | null {
   // First, check if the task has locations (additional lists it's added to)
   // This handles tasks created in sprints and added to project lists
   if (task.locations && task.locations.length > 0) {
@@ -95,6 +92,30 @@ function extractProjectName(task: ClickUpTask, knownProjects: string[]): string 
         p.toLowerCase().includes(location.name.toLowerCase())
       );
       if (matchedFromLocation) return matchedFromLocation;
+    }
+  }
+
+  // If this is a subtask, check the parent task's locations
+  if (task.parent && taskMap) {
+    const parentTask = taskMap.get(task.parent);
+    if (parentTask?.locations && parentTask.locations.length > 0) {
+      for (const location of parentTask.locations) {
+        const matchedFromParent = knownProjects.find(p =>
+          p.toLowerCase() === location.name.toLowerCase() ||
+          location.name.toLowerCase().includes(p.toLowerCase()) ||
+          p.toLowerCase().includes(location.name.toLowerCase())
+        );
+        if (matchedFromParent) return matchedFromParent;
+      }
+    }
+    // Also check parent's list
+    if (parentTask?.list?.name) {
+      const matchedFromParentList = knownProjects.find(p =>
+        p.toLowerCase() === parentTask.list.name.toLowerCase() ||
+        parentTask.list.name.toLowerCase().includes(p.toLowerCase()) ||
+        p.toLowerCase().includes(parentTask.list.name.toLowerCase())
+      );
+      if (matchedFromParentList) return matchedFromParentList;
     }
   }
 
@@ -176,9 +197,10 @@ function parseSprintDateRange(sprintName: string): { start: number; end: number 
   }
 
   // Create dates at start of day (local time) and end of day (local time)
-  // Add buffer to end to ensure we capture all time entries on the last day
+  // Add 1 day buffer to end to capture time entries logged slightly after sprint ends
+  // This accounts for people logging time the day after sprint completion
   const startDate = new Date(startYear, parseInt(startMonth) - 1, parseInt(startDay), 0, 0, 0, 0);
-  const endDate = new Date(endYear, parseInt(endMonth) - 1, parseInt(endDay), 23, 59, 59, 999);
+  const endDate = new Date(endYear, parseInt(endMonth) - 1, parseInt(endDay) + 1, 23, 59, 59, 999);
 
   return { start: startDate.getTime(), end: endDate.getTime() };
 }
@@ -200,7 +222,7 @@ function getHoursInRange(timeEntries: TimeEntry[], start: number, end: number): 
 /**
  * Process sprint tasks into SprintData
  * Includes completed tasks and in-progress tasks
- * For in-progress tasks, only counts time logged during the sprint period
+ * For ALL tasks, only counts time logged during the sprint period
  */
 function processSprintTasks(
   sprintId: string,
@@ -209,10 +231,16 @@ function processSprintTasks(
   knownProjects: string[],
   taskTimeEntries: Map<string, TimeEntry[]>
 ): SprintData {
+  // Build a map of all tasks by ID (for looking up parent tasks)
+  const allTasksMap = new Map<string, ClickUpTask>();
+  for (const task of tasks) {
+    allTasksMap.set(task.id, task);
+  }
+
   // Filter for completed and in-progress tasks
   const includedTasks = tasks.filter(task => shouldIncludeTask(task));
 
-  // Parse sprint date range for filtering in-progress task time
+  // Parse sprint date range for filtering task time
   const sprintRange = parseSprintDateRange(sprintName);
 
   const sprintTasks: SprintTask[] = [];
@@ -220,22 +248,21 @@ function processSprintTasks(
   for (const task of includedTasks) {
     let hoursSpent: number;
 
-    if (isCompleted(task)) {
-      // For completed tasks, use the task's total time_spent
-      hoursSpent = msToHours(task.time_spent);
+    // For all tasks, try to use time entries filtered by sprint date range
+    const timeEntries = taskTimeEntries.get(task.id) || [];
+
+    if (sprintRange && timeEntries.length > 0) {
+      // Filter time entries to only those within the sprint period
+      hoursSpent = getHoursInRange(timeEntries, sprintRange.start, sprintRange.end);
+    } else if (timeEntries.length > 0) {
+      // If no sprint range but have time entries, use total from entries
+      hoursSpent = timeEntries.reduce((sum, e) => sum + e.duration, 0) / 1000 / 60 / 60;
     } else {
-      // For in-progress tasks, filter time entries by sprint date range
-      const timeEntries = taskTimeEntries.get(task.id) || [];
-      if (sprintRange && timeEntries.length > 0) {
-        hoursSpent = getHoursInRange(timeEntries, sprintRange.start, sprintRange.end);
-      } else if (timeEntries.length > 0) {
-        // If no sprint range, use total from time entries
-        hoursSpent = timeEntries.reduce((sum, e) => sum + e.duration, 0) / 1000 / 60 / 60;
-      } else {
-        // Fallback to task's time_spent
-        hoursSpent = msToHours(task.time_spent);
-      }
+      // Fallback to task's time_spent only if no time entries were fetched
+      hoursSpent = msToHours(task.time_spent);
     }
+
+    const projectName = extractProjectName(task, knownProjects, allTasksMap);
 
     if (hoursSpent > 0) {
       sprintTasks.push({
@@ -243,7 +270,7 @@ function processSprintTasks(
         name: task.name,
         hoursSpent,
         isMaintenance: isMaintenance(task),
-        projectName: extractProjectName(task, knownProjects),
+        projectName,
       });
     }
   }
@@ -323,15 +350,13 @@ export async function getSprintData(
 
     const allTasks = Array.from(taskMap.values());
 
-    // For in-progress tasks, fetch their time entries to filter by sprint date
-    const inProgressTasks = allTasks.filter(t =>
-      t.status.status.toLowerCase() === 'in progress'
-    );
+    // Filter for tasks that should be included (completed + in-progress)
+    const includedTasks = allTasks.filter(t => shouldIncludeTask(t));
 
-    // Fetch time entries for in-progress tasks (in parallel)
+    // Fetch time entries for ALL included tasks to filter by sprint date
     const taskTimeEntries = new Map<string, TimeEntry[]>();
-    if (inProgressTasks.length > 0) {
-      const timeEntryPromises = inProgressTasks.map(async (task) => {
+    if (includedTasks.length > 0) {
+      const timeEntryPromises = includedTasks.map(async (task) => {
         try {
           const entries = await client.getTimeEntriesForTask(task.id);
           return { taskId: task.id, entries };

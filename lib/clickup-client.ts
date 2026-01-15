@@ -57,6 +57,7 @@ export interface ClickUpTask {
   };
   locations?: ClickUpTaskLocation[]; // Additional lists this task is added to
   tags?: ClickUpTag[];
+  parent?: string | null; // Parent task ID if this is a subtask
   custom_fields?: Array<{
     id: string;
     name: string;

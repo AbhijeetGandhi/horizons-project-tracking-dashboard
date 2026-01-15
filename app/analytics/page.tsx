@@ -2,6 +2,7 @@ import { createClickUpClient } from '@/lib/clickup-client';
 import { getSprintData } from '@/lib/sprint-service';
 import { getProjectMetrics } from '@/lib/project-service';
 import { SprintCharts } from '@/components/SprintCharts';
+import { SprintDetailsTable } from '@/components/SprintDetailsTable';
 import { RefreshButton } from '@/components/RefreshButton';
 import Link from 'next/link';
 
@@ -133,75 +134,13 @@ export default async function AnalyticsPage() {
         {/* Charts */}
         <SprintCharts sprintSummary={sprintSummary} />
 
-        {/* Sprint Details Table */}
-        <div className="mt-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Sprint Details
-          </h2>
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-gray-700">
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead className="bg-gray-50 dark:bg-gray-900">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      Sprint
-                    </th>
-                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      Date Range
-                    </th>
-                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      Development
-                    </th>
-                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      Maintenance
-                    </th>
-                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      Total
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                  {sprintSummary.sprints.map((sprint) => (
-                    <tr key={sprint.id} className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">
-                        {sprint.name}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm text-gray-500 dark:text-gray-400">
-                        {sprint.dateRange}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm text-blue-600 dark:text-blue-400">
-                        {sprint.developmentHours}h
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm text-orange-600 dark:text-orange-400">
-                        {sprint.maintenanceHours}h
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-semibold text-gray-900 dark:text-white">
-                        {sprint.totalHours}h
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-                <tfoot className="bg-gray-50 dark:bg-gray-900">
-                  <tr className="font-bold">
-                    <td className="px-6 py-4 text-sm text-gray-900 dark:text-white">
-                      Total ({sprintSummary.sprints.length} sprints)
-                    </td>
-                    <td className="px-6 py-4"></td>
-                    <td className="px-6 py-4 text-right text-sm text-blue-600 dark:text-blue-400">
-                      {sprintSummary.totalDevelopmentHours}h
-                    </td>
-                    <td className="px-6 py-4 text-right text-sm text-orange-600 dark:text-orange-400">
-                      {sprintSummary.totalMaintenanceHours}h
-                    </td>
-                    <td className="px-6 py-4 text-right text-sm text-gray-900 dark:text-white">
-                      {sprintSummary.totalHours}h
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-        </div>
+        {/* Sprint Details with Task Breakdown */}
+        <SprintDetailsTable
+          sprints={sprintSummary.sprints}
+          totalDevelopmentHours={sprintSummary.totalDevelopmentHours}
+          totalMaintenanceHours={sprintSummary.totalMaintenanceHours}
+          totalHours={sprintSummary.totalHours}
+        />
 
         {/* Footer */}
         <div className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
