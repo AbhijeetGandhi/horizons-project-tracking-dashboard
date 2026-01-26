@@ -90,10 +90,11 @@ function extractProjectName(
   // This handles tasks created in sprints and added to project lists
   if (task.locations && task.locations.length > 0) {
     for (const location of task.locations) {
+      // Only match if: exact match OR location name contains project name
+      // Do NOT match if project name contains location name (e.g., "Treatment Plan Reviewer" should not match "Treatment Plan" list)
       const matchedFromLocation = sortedProjects.find(p =>
         p.toLowerCase() === location.name.toLowerCase() ||
-        location.name.toLowerCase().includes(p.toLowerCase()) ||
-        p.toLowerCase().includes(location.name.toLowerCase())
+        location.name.toLowerCase().includes(p.toLowerCase())
       );
       if (matchedFromLocation) return matchedFromLocation;
     }
@@ -106,8 +107,7 @@ function extractProjectName(
       for (const location of parentTask.locations) {
         const matchedFromParent = sortedProjects.find(p =>
           p.toLowerCase() === location.name.toLowerCase() ||
-          location.name.toLowerCase().includes(p.toLowerCase()) ||
-          p.toLowerCase().includes(location.name.toLowerCase())
+          location.name.toLowerCase().includes(p.toLowerCase())
         );
         if (matchedFromParent) return matchedFromParent;
       }
@@ -116,8 +116,7 @@ function extractProjectName(
     if (parentTask?.list?.name) {
       const matchedFromParentList = sortedProjects.find(p =>
         p.toLowerCase() === parentTask.list.name.toLowerCase() ||
-        parentTask.list.name.toLowerCase().includes(p.toLowerCase()) ||
-        p.toLowerCase().includes(parentTask.list.name.toLowerCase())
+        parentTask.list.name.toLowerCase().includes(p.toLowerCase())
       );
       if (matchedFromParentList) return matchedFromParentList;
     }
@@ -129,8 +128,7 @@ function extractProjectName(
     const listName = task.list.name;
     const matchedFromList = sortedProjects.find(p =>
       p.toLowerCase() === listName.toLowerCase() ||
-      listName.toLowerCase().includes(p.toLowerCase()) ||
-      p.toLowerCase().includes(listName.toLowerCase())
+      listName.toLowerCase().includes(p.toLowerCase())
     );
     if (matchedFromList) return matchedFromList;
   }
@@ -139,15 +137,16 @@ function extractProjectName(
   const colonMatch = task.name.match(/^([^:]+):/);
   if (colonMatch) {
     const potentialProject = colonMatch[1].trim();
-    // Check if it matches a known project
+    // Check if potential project exactly matches or contains a known project
     const matchedProject = sortedProjects.find(p =>
-      p.toLowerCase().includes(potentialProject.toLowerCase()) ||
+      p.toLowerCase() === potentialProject.toLowerCase() ||
       potentialProject.toLowerCase().includes(p.toLowerCase())
     );
     if (matchedProject) return matchedProject;
   }
 
   // Try to match task name against known projects
+  // Only match if task name contains the EXACT project name
   for (const project of sortedProjects) {
     if (task.name.toLowerCase().includes(project.toLowerCase())) {
       return project;
