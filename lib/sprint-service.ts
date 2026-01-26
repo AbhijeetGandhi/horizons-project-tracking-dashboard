@@ -82,11 +82,15 @@ function extractProjectName(
   knownProjects: string[],
   taskMap?: Map<string, ClickUpTask>
 ): string | null {
+  // Sort known projects by length (longest first) to match more specific names first
+  // e.g., "Treatment Plan Reviewer" should match before "Treatment Plan"
+  const sortedProjects = [...knownProjects].sort((a, b) => b.length - a.length);
+
   // First, check if the task has locations (additional lists it's added to)
   // This handles tasks created in sprints and added to project lists
   if (task.locations && task.locations.length > 0) {
     for (const location of task.locations) {
-      const matchedFromLocation = knownProjects.find(p =>
+      const matchedFromLocation = sortedProjects.find(p =>
         p.toLowerCase() === location.name.toLowerCase() ||
         location.name.toLowerCase().includes(p.toLowerCase()) ||
         p.toLowerCase().includes(location.name.toLowerCase())
@@ -100,7 +104,7 @@ function extractProjectName(
     const parentTask = taskMap.get(task.parent);
     if (parentTask?.locations && parentTask.locations.length > 0) {
       for (const location of parentTask.locations) {
-        const matchedFromParent = knownProjects.find(p =>
+        const matchedFromParent = sortedProjects.find(p =>
           p.toLowerCase() === location.name.toLowerCase() ||
           location.name.toLowerCase().includes(p.toLowerCase()) ||
           p.toLowerCase().includes(location.name.toLowerCase())
@@ -110,7 +114,7 @@ function extractProjectName(
     }
     // Also check parent's list
     if (parentTask?.list?.name) {
-      const matchedFromParentList = knownProjects.find(p =>
+      const matchedFromParentList = sortedProjects.find(p =>
         p.toLowerCase() === parentTask.list.name.toLowerCase() ||
         parentTask.list.name.toLowerCase().includes(p.toLowerCase()) ||
         p.toLowerCase().includes(parentTask.list.name.toLowerCase())
@@ -123,7 +127,7 @@ function extractProjectName(
   // This handles tasks that are linked from the Projects folder
   if (task.list?.name) {
     const listName = task.list.name;
-    const matchedFromList = knownProjects.find(p =>
+    const matchedFromList = sortedProjects.find(p =>
       p.toLowerCase() === listName.toLowerCase() ||
       listName.toLowerCase().includes(p.toLowerCase()) ||
       p.toLowerCase().includes(listName.toLowerCase())
@@ -136,7 +140,7 @@ function extractProjectName(
   if (colonMatch) {
     const potentialProject = colonMatch[1].trim();
     // Check if it matches a known project
-    const matchedProject = knownProjects.find(p =>
+    const matchedProject = sortedProjects.find(p =>
       p.toLowerCase().includes(potentialProject.toLowerCase()) ||
       potentialProject.toLowerCase().includes(p.toLowerCase())
     );
@@ -144,7 +148,7 @@ function extractProjectName(
   }
 
   // Try to match task name against known projects
-  for (const project of knownProjects) {
+  for (const project of sortedProjects) {
     if (task.name.toLowerCase().includes(project.toLowerCase())) {
       return project;
     }
