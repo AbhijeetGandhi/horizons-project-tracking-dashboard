@@ -94,6 +94,7 @@ export interface TimeEntry {
   };
 }
 
+
 export class ClickUpClient {
   private config: ClickUpConfig;
 

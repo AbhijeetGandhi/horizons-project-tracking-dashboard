@@ -5,6 +5,28 @@
 
 import { ClickUpClient, ClickUpTask, TimeEntry } from './clickup-client';
 
+/**
+ * Run async functions with limited concurrency
+ */
+async function withConcurrency<T>(
+  tasks: (() => Promise<T>)[],
+  limit: number
+): Promise<T[]> {
+  const results: T[] = [];
+  let index = 0;
+
+  async function runNext(): Promise<void> {
+    while (index < tasks.length) {
+      const currentIndex = index++;
+      results[currentIndex] = await tasks[currentIndex]();
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(limit, tasks.length) }, () => runNext());
+  await Promise.all(workers);
+  return results;
+}
+
 export interface SprintTask {
   id: string;
   name: string;
@@ -331,12 +353,9 @@ export async function getSprintData(
     }
   }
 
-  // Fetch direct tasks for all sprints in parallel
-  const sprintDataPromises = sprintLists.map(async (sprint) => {
-    // Get tasks directly in the sprint list
+  // Fetch tasks for all sprints (limited concurrency to avoid rate limits)
+  const sprintTaskFetchers = sprintLists.map((sprint) => async () => {
     const directTasks = await client.getAllTasksInList(sprint.id);
-
-    // Get linked tasks from pre-fetched project tasks
     const linkedTasks = sprintLinkedTasksMap.get(sprint.id) || [];
 
     // Combine and deduplicate tasks (by ID)
@@ -350,33 +369,66 @@ export async function getSprintData(
       }
     }
 
-    const allTasks = Array.from(taskMap.values());
+    return { sprint, allTasks: Array.from(taskMap.values()) };
+  });
 
-    // Filter for tasks that should be included (completed + in-progress)
+  // Fetch sprint tasks with limited concurrency (3 sprints at a time)
+  const sprintResults = await withConcurrency(sprintTaskFetchers, 3);
+
+  // Now fetch time entries for all tasks across all sprints with global concurrency limit
+  // This prevents overwhelming the API (previously ~1500 concurrent requests)
+  const allTimeEntryFetchers: (() => Promise<{ taskId: string; entries: TimeEntry[] }>)[] = [];
+  const sprintTaskSets: { sprint: typeof sprintLists[0]; allTasks: ClickUpTask[]; includedTaskIds: string[] }[] = [];
+
+  for (const { sprint, allTasks } of sprintResults) {
     const includedTasks = allTasks.filter(t => shouldIncludeTask(t));
+    const includedTaskIds = includedTasks.map(t => t.id);
+    sprintTaskSets.push({ sprint, allTasks, includedTaskIds });
 
-    // Fetch time entries for ALL included tasks to filter by sprint date
-    const taskTimeEntries = new Map<string, TimeEntry[]>();
-    if (includedTasks.length > 0) {
-      const timeEntryPromises = includedTasks.map(async (task) => {
-        try {
-          const entries = await client.getTimeEntriesForTask(task.id);
-          return { taskId: task.id, entries };
-        } catch {
-          return { taskId: task.id, entries: [] };
+    for (const task of includedTasks) {
+      allTimeEntryFetchers.push(async () => {
+        // Retry once on failure
+        for (let attempt = 0; attempt < 2; attempt++) {
+          try {
+            const entries = await client.getTimeEntriesForTask(task.id);
+            return { taskId: task.id, entries };
+          } catch {
+            if (attempt === 0) {
+              // Brief delay before retry
+              await new Promise(r => setTimeout(r, 500));
+            }
+          }
         }
+        // On failure after retries, return empty (use 0 hours, NOT task.time_spent)
+        return { taskId: task.id, entries: [] };
       });
+    }
+  }
 
-      const timeEntryResults = await Promise.all(timeEntryPromises);
-      for (const result of timeEntryResults) {
-        taskTimeEntries.set(result.taskId, result.entries);
+  // Fetch all time entries with concurrency limit of 10
+  const allTimeEntryResults = await withConcurrency(allTimeEntryFetchers, 10);
+
+  // Build a global map of task ID -> time entries
+  const globalTimeEntries = new Map<string, TimeEntry[]>();
+  for (const result of allTimeEntryResults) {
+    globalTimeEntries.set(result.taskId, result.entries);
+  }
+
+  // Process each sprint using the fetched time entries
+  const sprintDataPromises = sprintTaskSets.map(({ sprint, allTasks }) => {
+    // Extract time entries for this sprint's tasks
+    const taskTimeEntries = new Map<string, TimeEntry[]>();
+    for (const task of allTasks) {
+      const entries = globalTimeEntries.get(task.id);
+      if (entries) {
+        taskTimeEntries.set(task.id, entries);
       }
     }
 
     return processSprintTasks(sprint.id, sprint.name, allTasks, knownProjects, taskTimeEntries);
   });
 
-  const sprints = await Promise.all(sprintDataPromises);
+  const sprints = sprintDataPromises;
 
   // Sort sprints by name (they have numbered names like "Horizons 0", "Horizons 1", etc.)
   sprints.sort((a, b) => {
