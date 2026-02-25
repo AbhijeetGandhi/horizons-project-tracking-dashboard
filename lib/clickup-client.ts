@@ -109,8 +109,8 @@ export class ClickUpClient {
         'Authorization': this.config.apiToken,
         'Content-Type': 'application/json',
       },
-      // Cache for 30 seconds to avoid hitting rate limits
-      next: { revalidate: 30 }
+      // No caching - always fetch fresh data
+      cache: 'no-store'
     });
 
     if (!response.ok) {

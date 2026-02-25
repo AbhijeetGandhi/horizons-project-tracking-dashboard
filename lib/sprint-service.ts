@@ -306,7 +306,6 @@ export async function getSprintData(
 ): Promise<SprintSummary> {
   // Get all sprint lists
   const sprintLists = await client.getListsInFolder(sprintFolderId);
-
   // Get the projects folder ID to find linked tasks
   const projectsFolderId = client.getProjectsFolderId();
 
